@@ -8,7 +8,6 @@ export default defineConfig({
       dark: 'media',
     }),
     presetIcons({
-      autoInstall: true,
       extraProperties: {
         display: 'inline-block',
         verticalAlign: 'middle',
