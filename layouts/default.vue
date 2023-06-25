@@ -18,6 +18,7 @@ const route = useRoute();
       <nav class="flex gap-4 text-lg font-900 uppercase">
         <NuxtLink to="/">Home</NuxtLink>
         <NuxtLink to="/about">About</NuxtLink>
+        <NuxtLink to="/contact">Contact</NuxtLink>
       </nav>
 
       <main class="flex grow items-center">

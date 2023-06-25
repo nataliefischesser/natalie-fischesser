@@ -7,7 +7,7 @@ defineProps<{
 </script>
 
 <template>
-  <div
+  <span
     class="inline-block aspect-square w-28 flex items-center justify-center b-current rounded-full bg-current"
     :class="{
       ['bg-transparent']: outlined || iconOnly,
@@ -15,12 +15,12 @@ defineProps<{
     }"
   >
     <i
-      class="text-5em"
+      class="text-3em"
       :class="{
         [iconClass ?? '']: iconClass,
-        ['scale-170']: iconOnly,
+        ['scale-275']: iconOnly,
         ['text-black']: !outlined && !iconOnly,
       }"
     />
-  </div>
+  </span>
 </template>

@@ -8,7 +8,7 @@ definePageMeta({
 </script>
 
 <template>
-  <PageBase class="gap-10 p-10">
+  <PageBase class="flex flex-col gap-10 p-10">
     <div class="grid grid-cols-[1fr_8rem] gap-10">
       <div
         class="flex items-center rounded-2xl bg-primary p-8 py-12 text-2xl font-800 text-black"
@@ -32,7 +32,7 @@ definePageMeta({
 
     <div class="flex items-center gap-8">
       <AppDot
-        icon-class="i-mdi-arrow-down scale-125"
+        icon-class="i-mdi-arrow-down scale-200"
         outlined
         class="text-red"
       />
@@ -58,7 +58,7 @@ definePageMeta({
     </ul>
 
     <div class="flex items-center gap-8">
-      <AppDot icon-class="i-mdi-star" outlined class="text-yellow" />
+      <AppDot icon-class="i-mdi-star scale-150" outlined class="text-yellow" />
 
       <h3 class="text-11 text-heading tracking-widest text-yellow">
         Top Tools
