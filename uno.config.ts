@@ -4,9 +4,7 @@ import { h } from '@unocss/preset-mini/utils';
 // https://unocss.dev/config/
 export default defineConfig({
   presets: [
-    presetWind({
-      dark: 'media',
-    }),
+    presetWind(),
     presetIcons({
       extraProperties: {
         display: 'inline-block',
@@ -16,7 +14,7 @@ export default defineConfig({
     presetWebFonts({
       fonts: {
         sans: 'Inter:400',
-        heading: 'Inter:800,900',
+        display: 'Inter:800,900',
       },
     }),
   ],
@@ -25,11 +23,16 @@ export default defineConfig({
   },
   theme: {
     colors: {
-      pink: 'rgba(255, 118, 225, 1)',
-      red: 'rgba(255, 93, 83, 1)',
-      green: 'rgba(4, 210, 149, 1)',
-      yellow: 'rgba(255, 200, 58, 1)',
-      blue: 'rgba(52, 187, 217, 1)',
+      // pink: 'rgba(255, 118, 225, 1)',
+      pink: 'oklch(76% 0.27 336)',
+      // red: 'rgba(255, 93, 83, 1)',
+      red: 'oklch(70% 0.25 27)',
+      // green: 'rgba(4, 210, 149, 1)',
+      green: 'oklch(76% 0.22 163)',
+      // yellow: 'rgba(255, 200, 58, 1)',
+      yellow: 'oklch(86% 0.2 86)',
+      // blue: 'rgba(52, 187, 217, 1)',
+      blue: 'oklch(73% 0.17 216)',
     },
   },
   extendTheme(theme) {
@@ -40,7 +43,7 @@ export default defineConfig({
   },
   shortcuts: [
     {
-      'text-heading': 'text-2xl font-900 lh-1em font-heading uppercase',
+      'text-heading': 'text-2xl font-900 lh-1em font-display uppercase',
       outlined: 'b-12 b-current',
       interactive: 'transition active:scale-100 hover:scale-110',
       dot: 'inline-block aspect-square w-28 flex items-center justify-center rounded-full bg-current text-3em',
