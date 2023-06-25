@@ -20,7 +20,7 @@ definePageMeta({
       />
       <NuxtLink
         to="/about"
-        class="col-span-3 h-full w-full flex items-center justify-center b-12 b-red rounded-full text-4xl text-heading text-red transition hover:bg-red hover:text-black"
+        class="outlined col-span-3 h-full w-full flex items-center justify-center b-red rounded-full text-4xl text-heading text-red transition hover:bg-red hover:text-black"
       >
         About Me
       </NuxtLink>
@@ -44,7 +44,7 @@ definePageMeta({
       />
       <NuxtLink
         to="/portfolio"
-        class="col-span-3 h-full w-full flex items-center justify-center b-12 b-green rounded-full text-4xl text-heading text-green transition hover:bg-green hover:text-black"
+        class="outlined col-span-3 h-full w-full flex items-center justify-center b-green rounded-full text-4xl text-heading text-green transition hover:bg-green hover:text-black"
       >
         Portfolio
       </NuxtLink>
@@ -68,7 +68,7 @@ definePageMeta({
       />
       <NuxtLink
         to="/contact"
-        class="col-span-4 h-full w-full flex items-center justify-center b-12 b-yellow rounded-full text-4xl text-heading text-yellow transition hover:bg-yellow hover:text-black"
+        class="outlined col-span-4 h-full w-full flex items-center justify-center b-yellow rounded-full text-4xl text-heading text-yellow transition hover:bg-yellow hover:text-black"
       >
         Get In Touch
       </NuxtLink>

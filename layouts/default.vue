@@ -15,7 +15,7 @@ const route = useRoute();
         </h1>
       </header>
 
-      <main class="flex grow items-center @container">
+      <main class="flex grow items-center @container/main">
         <Transition
           enter-active-class="duration-100 ease-out"
           enter-from-class="opacity-0 translate-y--4"
@@ -29,7 +29,7 @@ const route = useRoute();
           <h2
             v-if="$route.meta.contentTitle"
             :key="$route.path"
-            class="text-35 text-heading hyphens-auto @4xl:hyphens-none"
+            class="text-35 text-heading hyphens-auto @4xl/main:hyphens-none"
           >
             {{ $route.meta.contentTitle }}
           </h2>
