@@ -1,10 +1,10 @@
 <script setup lang="ts">
-useHead({ title: 'Contact' });
-
 definePageMeta({
   contentTitle: 'Get In Touch',
   contentClass: 'bg-yellow',
 });
+
+useHead({ title: 'Contact' });
 </script>
 
 <template>

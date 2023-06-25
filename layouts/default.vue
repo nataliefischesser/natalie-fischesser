@@ -1,17 +1,14 @@
-<script setup lang="ts">
-const route = useRoute();
-</script>
-
 <template>
   <LayoutBase class="grid grid-cols-fit-2xl">
     <div
       class="flex flex-col gap-8 p-10 text-black transition-colors duration-300"
-      :class="route.meta.contentClass"
+      :class="$route.meta.contentClass"
     >
       <header>
-        <h1 class="flex items-center gap-5 text-heading tracking-widest">
+        <h1 class="flex items-center gap-3 text-heading tracking-widest">
           <i class="i-mdi-dots-grid scale-125" />
-          <NuxtLink to="/">Natalie Fischesser</NuxtLink>
+
+          <NuxtLink to="/" class="p-3">Natalie Fischesser</NuxtLink>
         </h1>
       </header>
 

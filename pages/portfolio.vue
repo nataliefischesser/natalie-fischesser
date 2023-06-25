@@ -1,10 +1,10 @@
 <script setup lang="ts">
-useHead({ title: 'Portfolio' });
-
 definePageMeta({
   contentTitle: 'Port­folio',
   contentClass: 'bg-green',
 });
+
+useHead({ title: 'Portfolio' });
 
 const password = ref('');
 const unlocked = ref(false);

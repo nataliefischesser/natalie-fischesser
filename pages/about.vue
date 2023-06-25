@@ -1,10 +1,10 @@
 <script setup lang="ts">
-useHead({ title: 'About' });
-
 definePageMeta({
   contentTitle: 'About Me',
   contentClass: 'bg-red',
 });
+
+useHead({ title: 'About' });
 </script>
 
 <template>
