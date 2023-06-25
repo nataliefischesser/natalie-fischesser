@@ -20,22 +20,18 @@ definePageMeta({
       </div>
 
       <div class="flex flex-col gap-6">
-        <AppDot class="text-blue" />
+        <div class="dot text-blue" />
 
-        <AppDot
-          icon-class="i-mdi-emoticon-excited-outline"
-          icon-only
-          class="text-primary"
-        />
+        <div class="dot bg-transparent text-primary">
+          <i class="i-mdi-emoticon-excited-outline scale-275" />
+        </div>
       </div>
     </div>
 
     <div class="flex items-center gap-8">
-      <AppDot
-        icon-class="i-mdi-arrow-down scale-200"
-        outlined
-        class="text-red"
-      />
+      <div class="dot dot-outlined text-red">
+        <i class="i-mdi-arrow-down scale-200" />
+      </div>
 
       <h3 class="text-11 text-heading tracking-widest text-red">Skills</h3>
     </div>
@@ -58,7 +54,9 @@ definePageMeta({
     </ul>
 
     <div class="flex items-center gap-8">
-      <AppDot icon-class="i-mdi-star scale-150" outlined class="text-yellow" />
+      <div class="dot dot-outlined text-yellow">
+        <i class="i-mdi-star scale-150" />
+      </div>
 
       <h3 class="text-11 text-heading tracking-widest text-yellow">
         Top Tools

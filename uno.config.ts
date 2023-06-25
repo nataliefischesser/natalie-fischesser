@@ -1,4 +1,5 @@
 import { defineConfig, presetWind, presetIcons, presetWebFonts } from 'unocss';
+import { h } from '@unocss/preset-mini/utils';
 
 // https://unocss.dev/config/
 export default defineConfig({
@@ -41,6 +42,9 @@ export default defineConfig({
   shortcuts: [
     {
       'text-heading': 'text-2xl font-900 lh-1em font-heading uppercase',
+      dot: 'inline-block aspect-square w-28 flex items-center justify-center rounded-full bg-current text-3em',
+      outlined: 'b-12 b-current',
+      'dot-outlined': 'outlined bg-transparent',
     },
   ],
   rules: [

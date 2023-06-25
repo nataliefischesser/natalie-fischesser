@@ -13,18 +13,26 @@ definePageMeta({
       href="https://www.linkedin.com/in/natalie-fischesser/"
       target="_blank"
       rel="noopener noreferrer"
+      class="dot dot-outlined b-yellow text-yellow transition-colors hover:bg-yellow hover:text-black"
     >
-      <AppDot
-        icon-class="i-fa-brands-linkedin-in"
-        outlined
-        class="text-yellow"
-      />
+      <i class="i-fa-brands-linkedin-in" />
+      <span class="sr-only">LinkedIn</span>
     </NuxtLink>
 
-    <NuxtLink href="mailto:nfischesser@gmail.com">
-      <AppDot icon-class="i-mdi-email" outlined class="text-yellow" />
+    <NuxtLink
+      href="mailto:nfischesser@gmail.com"
+      class="dot dot-outlined b-yellow text-yellow transition-colors hover:bg-yellow hover:text-black"
+    >
+      <i class="i-mdi-email" />
+      <span class="sr-only">Email</span>
     </NuxtLink>
 
-    <AppDot icon-class="i-mdi-message" outlined class="text-yellow" />
+    <NuxtLink
+      href="sms:5555555555"
+      class="dot dot-outlined b-yellow text-yellow transition-colors hover:bg-yellow hover:text-black"
+    >
+      <i class="i-mdi-message" />
+      <span class="sr-only">Text</span>
+    </NuxtLink>
   </PageBase>
 </template>
