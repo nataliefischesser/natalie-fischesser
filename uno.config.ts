@@ -43,4 +43,37 @@ export default defineConfig({
       'text-heading': 'text-2xl font-900 lh-1em font-heading uppercase',
     },
   ],
+  rules: [
+    [
+      /^grid-(cols|rows)-(fit|fill)-(.+)$/,
+      ([, d, m, s]: string[], { theme }) => {
+        const directions: Record<string, string> = {
+          cols: 'columns',
+          rows: 'rows',
+        };
+
+        const modes: Record<string, string> = {
+          fit: 'auto-fit',
+          fill: 'auto-fill',
+        };
+
+        const v =
+          theme.width?.[s] ??
+          theme.spacing?.[s] ??
+          h.bracket.cssvar.global.rem(s);
+
+        if (v === null || v === undefined) return;
+
+        return {
+          [`grid-template-${directions[d]}`]: `repeat(${modes[m]}, minmax(min(100%, ${v}), 1fr))`,
+        };
+      },
+      {
+        autocomplete: [
+          'grid-(cols|rows)-(fit|fill)-$width',
+          'grid-(cols|rows)-(fit|fill)-<num>',
+        ],
+      },
+    ],
+  ],
 });

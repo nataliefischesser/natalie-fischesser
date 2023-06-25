@@ -3,7 +3,7 @@ const route = useRoute();
 </script>
 
 <template>
-  <LayoutBase class="grid grid-cols-[1fr_1fr]">
+  <LayoutBase class="grid-cols-fit-2xl grid">
     <div
       class="flex flex-col gap-8 p-10 text-black transition-colors duration-300"
       :class="route.meta.contentClass"
@@ -15,13 +15,7 @@ const route = useRoute();
         </h1>
       </header>
 
-      <nav class="flex gap-4 text-lg font-900 uppercase">
-        <NuxtLink to="/">Home</NuxtLink>
-        <NuxtLink to="/about">About</NuxtLink>
-        <NuxtLink to="/contact">Contact</NuxtLink>
-      </nav>
-
-      <main class="flex grow items-center">
+      <main class="flex grow items-center @container">
         <Transition
           enter-active-class="duration-100 ease-out"
           enter-from-class="opacity-0 translate-y--4"
@@ -35,7 +29,7 @@ const route = useRoute();
           <h2
             v-if="$route.meta.contentTitle"
             :key="$route.path"
-            class="text-35 text-heading"
+            class="text-35 text-heading hyphens-auto @4xl:hyphens-none"
           >
             {{ $route.meta.contentTitle }}
           </h2>

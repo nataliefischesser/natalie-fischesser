@@ -4,6 +4,7 @@ export default defineNuxtConfig({
   modules: ['@unocss/nuxt'],
   app: {
     head: {
+      htmlAttrs: { lang: 'en' },
       titleTemplate: '%s | Natalie Fischesser',
     },
     pageTransition: {
