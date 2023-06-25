@@ -1,4 +1,6 @@
 <script setup lang="ts">
+useHead({ title: 'About' });
+
 definePageMeta({
   contentTitle: 'About Me',
   contentClass: 'bg-red',
@@ -18,21 +20,38 @@ definePageMeta({
       </div>
 
       <div class="flex flex-col gap-6">
-        <div class="aspect-square w-full rounded-full bg-blue" />
-        <div class="aspect-square w-full rounded-full bg-primary" />
+        <div class="dot bg-blue" />
+        <div class="dot bg-primary" />
       </div>
     </div>
 
     <div class="flex items-center gap-8">
-      <div class="aspect-square w-28 rounded-full bg-red" />
+      <div class="dot bg-red" />
 
-      <h3 class="text-heading text-11 tracking-widest text-red">Skills</h3>
+      <h3 class="text-11 text-heading tracking-widest text-red">Skills</h3>
     </div>
 
-    <div class="flex items-center gap-8">
-      <div class="aspect-square w-28 rounded-full bg-yellow" />
+    <ul
+      class="list-disc columns-2 pl-8 text-xl font-900 text-gray-200 children:p-1"
+    >
+      <li>User Research</li>
+      <li>Design Systems</li>
+      <li>Digital Product Design</li>
+      <li>User-centered Design</li>
+      <li>Mobile App Design</li>
+      <li>UI Design</li>
+      <li>Wireframes</li>
+      <li>Prototyping</li>
+      <li>Accessibility</li>
+      <li>Empathy</li>
+      <li>Relationship Building</li>
+      <li>Communication</li>
+    </ul>
 
-      <h3 class="text-heading text-11 tracking-widest text-yellow">
+    <div class="flex items-center gap-8">
+      <div class="dot bg-yellow" />
+
+      <h3 class="text-11 text-heading tracking-widest text-yellow">
         Top Tools
       </h3>
     </div>

@@ -38,6 +38,9 @@ export default defineConfig({
     };
   },
   shortcuts: [
-    { 'text-heading': 'text-2xl font-900 lh-1em font-heading uppercase' },
+    {
+      dot: 'inline-block aspect-square w-28 rounded-full',
+      'text-heading': 'text-2xl font-900 lh-1em font-heading uppercase',
+    },
   ],
 });

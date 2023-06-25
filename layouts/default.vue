@@ -9,13 +9,13 @@ const route = useRoute();
       :class="route.meta.contentClass"
     >
       <header>
-        <h1 class="text-heading flex items-center gap-5 tracking-widest">
+        <h1 class="flex items-center gap-5 text-heading tracking-widest">
           <i class="i-mdi-dots-grid scale-125" />
           <NuxtLink to="/">Natalie Fischesser</NuxtLink>
         </h1>
       </header>
 
-      <nav class="flex gap-4 text-lg font-bold uppercase">
+      <nav class="flex gap-4 text-lg font-900 uppercase">
         <NuxtLink to="/">Home</NuxtLink>
         <NuxtLink to="/about">About</NuxtLink>
       </nav>
@@ -34,7 +34,7 @@ const route = useRoute();
           <h2
             v-if="$route.meta.contentTitle"
             :key="$route.path"
-            class="text-heading text-35"
+            class="text-35 text-heading"
           >
             {{ $route.meta.contentTitle }}
           </h2>

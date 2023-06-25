@@ -1,4 +1,6 @@
 <script setup lang="ts">
+useHead({ title: 'Home' });
+
 definePageMeta({
   contentTitle: 'Hey! What’s Good?',
   contentClass: 'bg-primary',
