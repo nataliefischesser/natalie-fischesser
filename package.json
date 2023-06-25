@@ -12,6 +12,7 @@
     "deploy": "run-s test build generate"
   },
   "devDependencies": {
+    "@iconify-json/fa-brands": "^1.1.4",
     "@iconify-json/mdi": "^1.1.52",
     "@nuxtjs/eslint-config-typescript": "^12.0.0",
     "@rushstack/eslint-patch": "^1.3.2",

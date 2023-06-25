@@ -20,13 +20,22 @@ definePageMeta({
       </div>
 
       <div class="flex flex-col gap-6">
-        <div class="dot bg-blue" />
-        <div class="dot bg-primary" />
+        <AppDot class="text-blue" />
+
+        <AppDot
+          icon-class="i-mdi-emoticon-excited-outline"
+          icon-only
+          class="text-primary"
+        />
       </div>
     </div>
 
     <div class="flex items-center gap-8">
-      <div class="dot bg-red" />
+      <AppDot
+        icon-class="i-mdi-arrow-down scale-125"
+        outlined
+        class="text-red"
+      />
 
       <h3 class="text-11 text-heading tracking-widest text-red">Skills</h3>
     </div>
@@ -49,11 +58,34 @@ definePageMeta({
     </ul>
 
     <div class="flex items-center gap-8">
-      <div class="dot bg-yellow" />
+      <AppDot icon-class="i-mdi-star" outlined class="text-yellow" />
 
       <h3 class="text-11 text-heading tracking-widest text-yellow">
         Top Tools
       </h3>
+    </div>
+
+    <div class="flex flex-wrap gap-8">
+      <div
+        class="aspect-square w-28 flex items-center justify-center rounded-xl bg-green text-5em text-black"
+      >
+        <i class="i-fa-brands-figma" />
+        <span class="sr-only">Figma</span>
+      </div>
+
+      <div
+        class="aspect-square w-28 flex items-center justify-center rounded-xl bg-yellow text-5em text-black"
+      >
+        <i class="i-fa-brands-sketch" />
+        <span class="sr-only">Figma</span>
+      </div>
+
+      <div
+        class="aspect-square w-28 flex items-center justify-center rounded-xl bg-pink text-5em text-black"
+      >
+        <i class="i-fa-brands-adobe" />
+        <span class="sr-only">Adobe Suite</span>
+      </div>
     </div>
   </PageBase>
 </template>

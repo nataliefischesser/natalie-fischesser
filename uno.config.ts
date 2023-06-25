@@ -7,6 +7,7 @@ export default defineConfig({
       dark: 'media',
     }),
     presetIcons({
+      autoInstall: true,
       extraProperties: {
         display: 'inline-block',
         verticalAlign: 'middle',
@@ -39,7 +40,6 @@ export default defineConfig({
   },
   shortcuts: [
     {
-      dot: 'inline-block aspect-square w-28 rounded-full',
       'text-heading': 'text-2xl font-900 lh-1em font-heading uppercase',
     },
   ],

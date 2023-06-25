@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 devDependencies:
+  '@iconify-json/fa-brands':
+    specifier: ^1.1.4
+    version: 1.1.4
   '@iconify-json/mdi':
     specifier: ^1.1.52
     version: 1.1.52
@@ -852,6 +855,12 @@ packages:
 
   /@humanwhocodes/object-schema@1.2.1:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
+    dev: true
+
+  /@iconify-json/fa-brands@1.1.4:
+    resolution: {integrity: sha512-JT9BgOFT17qgwctdjGbIKENcW2jEOzo22/SPTAT2T4ygQPtG4niBFnjkDZNcqk9JHSyc6sYvgb9NFKoJ8eGkHQ==}
+    dependencies:
+      '@iconify/types': 2.0.0
     dev: true
 
   /@iconify-json/mdi@1.1.52:
