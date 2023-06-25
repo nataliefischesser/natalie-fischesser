@@ -3,8 +3,8 @@ require('@rushstack/eslint-patch/modern-module-resolution');
 module.exports = {
   root: true,
   env: {
-    browser: true,
     es2022: true,
+    browser: true,
     node: true,
   },
   extends: [
@@ -16,8 +16,8 @@ module.exports = {
     '@unocss',
   ],
   parserOptions: {
-    ecmaVersion: 'latest',
     parser: '@typescript-eslint/parser',
+    ecmaVersion: 'latest',
     sourceType: 'module',
   },
 };
