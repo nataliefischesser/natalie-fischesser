@@ -13,11 +13,11 @@ export default defineNuxtConfig({
       titleTemplate: '%s | Natalie Fischesser',
     },
     pageTransition: {
-      enterActiveClass: 'duration-100 ease-out',
       enterFromClass: 'opacity-0 scale-98',
+      enterActiveClass: 'duration-100 ease-out',
       enterToClass: 'opacity-100 scale-100',
-      leaveActiveClass: 'duration-100 ease-in',
       leaveFromClass: 'opacity-100 scale-100',
+      leaveActiveClass: 'duration-100 ease-in',
       leaveToClass: 'opacity-0 scale-98',
       mode: 'out-in',
       appear: true,

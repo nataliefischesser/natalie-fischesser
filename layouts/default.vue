@@ -14,11 +14,11 @@
 
       <main class="flex grow items-center @container/main">
         <Transition
-          enter-active-class="duration-100 ease-out"
           enter-from-class="opacity-0 translate-y--4"
+          enter-active-class="duration-100 ease-out"
           enter-to-class="opacity-100 translate-y-0"
-          leave-active-class="duration-100 ease-in"
           leave-from-class="opacity-100 translate-y-0"
+          leave-active-class="duration-100 ease-in"
           leave-to-class="opacity-0 translate-y--4"
           mode="out-in"
           appear
