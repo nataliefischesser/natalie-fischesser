@@ -13,7 +13,7 @@ definePageMeta({
       href="https://www.linkedin.com/in/natalie-fischesser/"
       target="_blank"
       rel="noopener noreferrer"
-      class="dot dot-outlined b-yellow text-yellow transition-colors hover:bg-yellow hover:text-black"
+      class="dot dot-outlined b-yellow text-yellow interactive hover:bg-yellow hover:text-black"
     >
       <i class="i-fa-brands-linkedin-in" />
       <span class="sr-only">LinkedIn</span>
@@ -21,7 +21,7 @@ definePageMeta({
 
     <NuxtLink
       href="mailto:nfischesser@gmail.com"
-      class="dot dot-outlined b-yellow text-yellow transition-colors hover:bg-yellow hover:text-black"
+      class="dot dot-outlined b-yellow text-yellow interactive hover:bg-yellow hover:text-black"
     >
       <i class="i-mdi-email" />
       <span class="sr-only">Email</span>
@@ -29,7 +29,7 @@ definePageMeta({
 
     <NuxtLink
       href="sms:5555555555"
-      class="dot dot-outlined b-yellow text-yellow transition-colors hover:bg-yellow hover:text-black"
+      class="dot dot-outlined b-yellow text-yellow interactive hover:bg-yellow hover:text-black"
     >
       <i class="i-mdi-message" />
       <span class="sr-only">Text</span>

@@ -42,8 +42,9 @@ export default defineConfig({
   shortcuts: [
     {
       'text-heading': 'text-2xl font-900 lh-1em font-heading uppercase',
-      dot: 'inline-block aspect-square w-28 flex items-center justify-center rounded-full bg-current text-3em',
       outlined: 'b-12 b-current',
+      interactive: 'transition active:scale-100 hover:scale-110',
+      dot: 'inline-block aspect-square w-28 flex items-center justify-center rounded-full bg-current text-3em',
       'dot-outlined': 'outlined bg-transparent',
     },
   ],

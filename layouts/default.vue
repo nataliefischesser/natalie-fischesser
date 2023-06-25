@@ -3,7 +3,7 @@ const route = useRoute();
 </script>
 
 <template>
-  <LayoutBase class="grid-cols-fit-2xl grid">
+  <LayoutBase class="grid grid-cols-fit-2xl">
     <div
       class="flex flex-col gap-8 p-10 text-black transition-colors duration-300"
       :class="route.meta.contentClass"

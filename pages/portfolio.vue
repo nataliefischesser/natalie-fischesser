@@ -36,7 +36,7 @@ const unlock = () => {
       <button
         type="submit"
         aria-label="Submit"
-        class="dot dot-outlined text-green"
+        class="dot dot-outlined b-green text-green interactive hover:bg-green hover:text-black"
       >
         <i class="i-mdi-arrow-right scale-200" />
       </button>
