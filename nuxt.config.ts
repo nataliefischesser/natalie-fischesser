@@ -8,10 +8,6 @@ export default defineNuxtConfig({
     enabled: true,
   },
   app: {
-    head: {
-      htmlAttrs: { lang: 'en' },
-      titleTemplate: '%s | Natalie Fischesser',
-    },
     pageTransition: {
       enterFromClass: 'opacity-0 scale-98',
       enterActiveClass: 'duration-100 ease-out',
