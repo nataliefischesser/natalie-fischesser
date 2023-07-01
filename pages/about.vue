@@ -67,22 +67,36 @@ useHead({ title: 'About' });
       <div
         class="aspect-square w-28 flex items-center justify-center rounded-xl bg-green text-5em text-black"
       >
-        <i class="i-fa-brands-figma" />
+        <i class="i-simple-icons-figma" />
         <span class="sr-only">Figma</span>
       </div>
 
       <div
         class="aspect-square w-28 flex items-center justify-center rounded-xl bg-yellow text-5em text-black"
       >
-        <i class="i-fa-brands-sketch" />
+        <i class="i-simple-icons-sketch" />
         <span class="sr-only">Figma</span>
       </div>
 
       <div
         class="aspect-square w-28 flex items-center justify-center rounded-xl bg-pink text-5em text-black"
       >
-        <i class="i-fa-brands-adobe" />
+        <i class="i-simple-icons-adobecreativecloud" />
         <span class="sr-only">Adobe Suite</span>
+      </div>
+
+      <div
+        class="aspect-square w-28 flex items-center justify-center rounded-xl bg-yellow text-5em text-black"
+      >
+        <i class="i-simple-icons-miro scale-90" />
+        <span class="sr-only">Miro</span>
+      </div>
+
+      <div
+        class="aspect-square w-28 flex items-center justify-center rounded-xl bg-blue text-5em text-black"
+      >
+        <i class="i-simple-icons-jirasoftware" />
+        <span class="sr-only">Jira</span>
       </div>
     </div>
   </PageBase>
