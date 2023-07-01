@@ -10,7 +10,9 @@
         >
           <i class="i-mdi-dots-grid scale-125" />
 
-          <NuxtLink to="/" class="p-3">Natalie Fischesser</NuxtLink>
+          <NuxtLink to="/" class="p-3 transition active:scale-98">
+            Natalie Fischesser
+          </NuxtLink>
         </h1>
       </header>
 

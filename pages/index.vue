@@ -22,7 +22,7 @@ useHead({ title: 'Home' });
 
       <NuxtLink
         to="/about"
-        class="col-span-3 h-20em flex items-center justify-center b-2em outlined b-red rounded-full text-1em text-red transition hover:scale-105 interactive hover:bg-red hover:text-black"
+        class="col-span-3 h-20em flex items-center justify-center b-2em outlined b-red rounded-full text-1em text-red transition active:scale-100 hover:scale-105 interactive hover:bg-red hover:text-black"
       >
         <span class="text-8em text-heading">About Me</span>
       </NuxtLink>
@@ -53,7 +53,7 @@ useHead({ title: 'Home' });
 
       <NuxtLink
         to="/portfolio"
-        class="col-span-3 h-20em flex items-center justify-center b-2em outlined b-green rounded-full text-1em text-green transition hover:scale-105 interactive hover:bg-green hover:text-black"
+        class="col-span-3 h-20em flex items-center justify-center b-2em outlined b-green rounded-full text-1em text-green transition active:scale-100 hover:scale-105 interactive hover:bg-green hover:text-black"
       >
         <span class="text-8em text-heading">Portfolio</span>
       </NuxtLink>
@@ -84,7 +84,7 @@ useHead({ title: 'Home' });
 
       <NuxtLink
         to="/contact"
-        class="col-span-4 h-20em flex items-center justify-center b-2em outlined b-yellow rounded-full text-1em text-yellow transition hover:scale-105 interactive hover:bg-yellow hover:text-black"
+        class="col-span-4 h-20em flex items-center justify-center b-2em outlined b-yellow rounded-full text-1em text-yellow transition active:scale-100 hover:scale-105 interactive hover:bg-yellow hover:text-black"
       >
         <span class="text-8em text-heading">Get In Touch</span>
       </NuxtLink>
