@@ -1,11 +1,13 @@
 <template>
-  <LayoutBase class="grid grid-cols-fit-2xl">
+  <LayoutBase class="flex flex-col xl:flex-row">
     <div
-      class="flex flex-col gap-8 p-10 text-black transition-colors duration-300"
+      class="flex basis-50% flex-col gap-8 text-black transition-colors duration-300 p-content"
       :class="$route.meta.contentClass"
     >
       <header>
-        <h1 class="flex items-center gap-3 text-heading tracking-widest">
+        <h1
+          class="flex items-center gap-3 text-heading text-xl tracking-widest sm:text-2xl"
+        >
           <i class="i-mdi-dots-grid scale-125" />
 
           <NuxtLink to="/" class="p-3">Natalie Fischesser</NuxtLink>
@@ -26,7 +28,7 @@
           <h2
             v-if="$route.meta.contentTitle"
             :key="$route.path"
-            class="text-35 text-heading hyphens-auto @4xl/main:hyphens-none"
+            class="text-18 text-heading hyphens-auto lg:text-35 sm:text-25 @4xl/main:hyphens-none"
           >
             {{ $route.meta.contentTitle }}
           </h2>

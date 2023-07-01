@@ -43,6 +43,7 @@ export default defineConfig({
   },
   shortcuts: [
     {
+      'p-content': 'p-8 sm:p-10',
       'text-heading': 'text-2xl font-900 lh-1em font-display uppercase',
       outlined: 'b-12 b-current',
       interactive: 'transition active:scale-100 hover:scale-110',

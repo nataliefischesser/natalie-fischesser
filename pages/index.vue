@@ -8,7 +8,7 @@ useHead({ title: 'Home' });
 </script>
 
 <template>
-  <PageBase class="flex flex-col p-10">
+  <PageBase class="flex flex-col">
     <aside
       class="grid grid-cols-[1fr_1fr_1fr_1fr_1fr] grid-rows-[1fr_1fr_1fr_1fr_1fr_1fr_1fr] grow items-start gap-8 text-center"
     >

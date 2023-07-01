@@ -8,8 +8,8 @@ useHead({ title: 'About' });
 </script>
 
 <template>
-  <PageBase class="flex flex-col gap-10 p-10">
-    <div class="grid grid-cols-[1fr_8rem] gap-10">
+  <PageBase class="flex flex-col gap-10">
+    <div class="grid gap-10 sm:grid-cols-[1fr_8rem]">
       <div
         class="flex items-center rounded-2xl bg-primary p-8 py-12 text-2xl font-800 text-black"
       >
@@ -19,7 +19,7 @@ useHead({ title: 'About' });
         </span>
       </div>
 
-      <div class="flex flex-col gap-6">
+      <div class="flex flex-row justify-center gap-6 sm:flex-col">
         <div class="dot text-blue" />
 
         <div class="dot bg-transparent text-primary">
@@ -37,7 +37,7 @@ useHead({ title: 'About' });
     </div>
 
     <ul
-      class="list-disc columns-2 pl-8 text-xl font-900 text-gray-200 children:p-1"
+      class="list-disc columns-1 pl-8 text-xl font-900 text-gray-200 sm:columns-2 children:p-1"
     >
       <li>User Research</li>
       <li>Design Systems</li>
@@ -65,37 +65,37 @@ useHead({ title: 'About' });
 
     <div class="flex flex-wrap gap-8">
       <div
-        class="aspect-square w-28 flex items-center justify-center rounded-xl bg-green text-5em text-black"
+        class="aspect-square w-1em flex items-center justify-center rounded-xl bg-green text-20 text-black sm:text-24"
       >
-        <i class="i-simple-icons-figma" />
+        <i class="i-simple-icons-figma scale-75" />
         <span class="sr-only">Figma</span>
       </div>
 
       <div
-        class="aspect-square w-28 flex items-center justify-center rounded-xl bg-yellow text-5em text-black"
+        class="aspect-square w-1em flex items-center justify-center rounded-xl bg-yellow text-20 text-black sm:text-24"
       >
-        <i class="i-simple-icons-sketch" />
+        <i class="i-simple-icons-sketch scale-65" />
         <span class="sr-only">Figma</span>
       </div>
 
       <div
-        class="aspect-square w-28 flex items-center justify-center rounded-xl bg-pink text-5em text-black"
+        class="aspect-square w-1em flex items-center justify-center rounded-xl bg-pink text-20 text-black sm:text-24"
       >
-        <i class="i-simple-icons-adobecreativecloud" />
+        <i class="i-simple-icons-adobecreativecloud scale-75" />
         <span class="sr-only">Adobe Suite</span>
       </div>
 
       <div
-        class="aspect-square w-28 flex items-center justify-center rounded-xl bg-yellow text-5em text-black"
+        class="aspect-square w-1em flex items-center justify-center rounded-xl bg-yellow text-20 text-black sm:text-24"
       >
-        <i class="i-simple-icons-miro scale-90" />
+        <i class="i-simple-icons-miro scale-65" />
         <span class="sr-only">Miro</span>
       </div>
 
       <div
-        class="aspect-square w-28 flex items-center justify-center rounded-xl bg-blue text-5em text-black"
+        class="aspect-square w-1em flex items-center justify-center rounded-xl bg-blue text-20 text-black sm:text-24"
       >
-        <i class="i-simple-icons-jirasoftware" />
+        <i class="i-simple-icons-jirasoftware scale-75" />
         <span class="sr-only">Jira</span>
       </div>
     </div>
