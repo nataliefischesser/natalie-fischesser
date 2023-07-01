@@ -1,5 +1,5 @@
 <template>
-  <div class="h-full min-h-100dvh bg-black font-sans text-white">
+  <div class="h-viewport">
     <slot />
   </div>
 </template>
