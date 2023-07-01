@@ -1,5 +1,8 @@
 import { defineConfig, presetWind, presetIcons, presetWebFonts } from 'unocss';
+import { theme } from 'unocss/preset-mini';
 import { h } from '@unocss/preset-mini/utils';
+
+const { sans: defaultSans } = theme.fontFamily!;
 
 // https://unocss.dev/config/
 export default defineConfig({
@@ -12,9 +15,9 @@ export default defineConfig({
       },
     }),
     presetWebFonts({
+      extendTheme: false,
       fonts: {
-        sans: 'Inter:400',
-        display: 'Inter:800,900',
+        sans: 'Inter:400,800,900',
       },
     }),
   ],
@@ -23,16 +26,14 @@ export default defineConfig({
   },
   theme: {
     colors: {
-      // pink: 'rgba(255, 118, 225, 1)',
-      pink: 'oklch(76% 0.27 336)',
-      // red: 'rgba(255, 93, 83, 1)',
-      red: 'oklch(70% 0.25 27)',
-      // green: 'rgba(4, 210, 149, 1)',
-      green: 'oklch(76% 0.22 163)',
-      // yellow: 'rgba(255, 200, 58, 1)',
-      yellow: 'oklch(86% 0.2 86)',
-      // blue: 'rgba(52, 187, 217, 1)',
-      blue: 'oklch(73% 0.17 216)',
+      pink: 'oklch(76% 0.27 336)', // rgba(255, 118, 225, 1)
+      red: 'oklch(70% 0.25 27)', // rgba(255, 93, 83, 1)
+      green: 'oklch(76% 0.22 163)', // rgba(4, 210, 149, 1)
+      yellow: 'oklch(86% 0.2 86)', // rgba(255, 200, 58, 1)
+      blue: 'oklch(73% 0.17 216)', // rgba(52, 187, 217, 1)
+    },
+    fontFamily: {
+      sans: ['Inter', defaultSans].join(','),
     },
   },
   extendTheme(theme) {
@@ -44,7 +45,7 @@ export default defineConfig({
   shortcuts: [
     {
       'p-content': 'p-8 sm:p-10',
-      'text-heading': 'text-2xl font-900 lh-1em font-display uppercase',
+      'text-heading': 'text-2xl font-900 lh-1em uppercase',
       outlined: 'b-12 b-current',
       interactive: 'transition active:scale-100 hover:scale-110',
       dot: 'inline-block aspect-square w-28 flex items-center justify-center rounded-full bg-current text-3em',

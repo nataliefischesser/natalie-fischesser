@@ -23,4 +23,9 @@ export default defineNuxtConfig({
     shim: false,
   },
   css: ['@unocss/reset/tailwind.css'],
+  postcss: {
+    plugins: {
+      '@csstools/postcss-oklab-function': { preserve: true },
+    },
+  },
 });
