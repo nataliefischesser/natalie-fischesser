@@ -10,7 +10,7 @@ useHead({ title: 'Home' });
 <template>
   <PageBase class="flex flex-col items-center justify-center">
     <aside
-      class="grid grid-cols-5 grid-rows-7 gap-8 text-center text-0.6vw xl:text-0.3vw"
+      class="grid grid-cols-5 grid-rows-7 gap-8 text-center text-0.6vi xl:text-0.3vi"
     >
       <div
         class="h-20em w-20em flex items-center justify-center rounded-full bg-yellow"
