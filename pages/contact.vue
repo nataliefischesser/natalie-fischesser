@@ -10,31 +10,19 @@ useHead({ title: 'Contact' });
 <template>
   <PageBase class="flex items-center justify-center">
     <div class="flex flex-wrap items-center justify-center gap-6 sm:gap-8">
-      <NuxtLink
+      <ContactLink
         href="https://www.linkedin.com/in/natalie-fischesser/"
-        target="_blank"
-        rel="noopener noreferrer"
-        class="dot dot-outlined b-yellow text-yellow interactive hover:bg-yellow hover:text-black"
-      >
-        <i class="i-fa-brands-linkedin-in" />
-        <span class="sr-only">LinkedIn</span>
-      </NuxtLink>
+        title="LinkedIn"
+        icon="i-fa-brands-linkedin-in"
+      />
 
-      <NuxtLink
+      <ContactLink
         href="mailto:nfischesser@gmail.com"
-        class="dot dot-outlined b-yellow text-yellow interactive hover:bg-yellow hover:text-black"
-      >
-        <i class="i-mdi-email" />
-        <span class="sr-only">Email</span>
-      </NuxtLink>
+        title="Email"
+        icon="i-mdi-email"
+      />
 
-      <NuxtLink
-        href="sms:5555555555"
-        class="dot dot-outlined b-yellow text-yellow interactive hover:bg-yellow hover:text-black"
-      >
-        <i class="i-mdi-message" />
-        <span class="sr-only">Text</span>
-      </NuxtLink>
+      <ContactLink href="sms:5555555555" title="Text" icon="i-mdi-message" />
     </div>
   </PageBase>
 </template>

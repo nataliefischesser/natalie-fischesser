@@ -64,40 +64,35 @@ useHead({ title: 'About' });
     </div>
 
     <div class="flex flex-wrap gap-8">
-      <div
-        class="aspect-square w-1em flex items-center justify-center rounded-xl bg-green text-20 text-black sm:text-24"
-      >
-        <i class="i-simple-icons-figma scale-75" />
-        <span class="sr-only">Figma</span>
-      </div>
+      <AboutTopTool
+        title="Figma"
+        icon="i-simple-icons-figma scale-75"
+        class="bg-green"
+      />
 
-      <div
-        class="aspect-square w-1em flex items-center justify-center rounded-xl bg-yellow text-20 text-black sm:text-24"
-      >
-        <i class="i-simple-icons-sketch scale-65" />
-        <span class="sr-only">Figma</span>
-      </div>
+      <AboutTopTool
+        title="Sketch"
+        icon="i-simple-icons-sketch scale-65"
+        class="bg-yellow"
+      />
 
-      <div
-        class="aspect-square w-1em flex items-center justify-center rounded-xl bg-pink text-20 text-black sm:text-24"
-      >
-        <i class="i-simple-icons-adobecreativecloud scale-75" />
-        <span class="sr-only">Adobe Suite</span>
-      </div>
+      <AboutTopTool
+        title="Adobe Suite"
+        icon="i-simple-icons-adobecreativecloud scale-75"
+        class="bg-pink"
+      />
 
-      <div
-        class="aspect-square w-1em flex items-center justify-center rounded-xl bg-yellow text-20 text-black sm:text-24"
-      >
-        <i class="i-simple-icons-miro scale-65" />
-        <span class="sr-only">Miro</span>
-      </div>
+      <AboutTopTool
+        title="Miro"
+        icon="i-simple-icons-miro scale-65"
+        class="bg-yellow"
+      />
 
-      <div
-        class="aspect-square w-1em flex items-center justify-center rounded-xl bg-blue text-20 text-black sm:text-24"
-      >
-        <i class="i-simple-icons-jirasoftware scale-75" />
-        <span class="sr-only">Jira</span>
-      </div>
+      <AboutTopTool
+        title="Jira"
+        icon="i-simple-icons-jirasoftware scale-75"
+        class="bg-blue"
+      />
     </div>
   </PageBase>
 </template>
