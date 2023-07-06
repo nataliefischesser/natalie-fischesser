@@ -1,7 +1,8 @@
 <script setup lang="ts">
 definePageMeta({
-  contentTitle: 'About Me',
-  contentClass: 'bg-red',
+  layout: 'primary',
+  title: 'About Me',
+  color: 'red',
 });
 
 useHead({ title: 'About' });
@@ -11,10 +12,10 @@ useHead({ title: 'About' });
   <PageBase class="flex flex-col gap-10">
     <div class="grid gap-10 sm:grid-cols-[1fr_8rem]">
       <div
-        class="flex items-center rounded-2xl bg-primary p-8 py-12 text-2xl font-800 text-black"
+        class="flex items-center rounded-2xl bg-pink p-8 py-12 text-2xl font-800 text-black"
       >
         <span>
-          I'm a Visual Designer with 19 years of experience that is all about
+          I'm a Visual Designer with 15+ years of experience that is all about
           creating engaging experiences for the users of digital products.
         </span>
       </div>
@@ -22,7 +23,7 @@ useHead({ title: 'About' });
       <div class="flex flex-row justify-center gap-6 sm:flex-col">
         <div class="dot text-blue" />
 
-        <div class="dot bg-transparent text-primary">
+        <div class="dot bg-transparent text-pink">
           <i class="i-mdi-emoticon-excited-outline scale-275" />
         </div>
       </div>
@@ -37,7 +38,7 @@ useHead({ title: 'About' });
     </div>
 
     <ul
-      class="list-disc columns-1 pl-8 text-xl font-900 text-gray-200 sm:columns-2 children:p-1"
+      class="list-disc columns-1 pis-8 text-xl font-900 text-gray-200 sm:columns-2 children:p-1"
     >
       <li>User Research</li>
       <li>Design Systems</li>

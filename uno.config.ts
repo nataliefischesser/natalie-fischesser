@@ -1,8 +1,22 @@
-import { defineConfig, presetWind, presetIcons, presetWebFonts } from 'unocss';
-import { theme } from 'unocss/preset-mini';
-import { h } from '@unocss/preset-mini/utils';
+import {
+  defineConfig,
+  presetIcons,
+  presetTypography,
+  presetWebFonts,
+  presetWind,
+} from 'unocss';
 
-const { sans: defaultSans } = theme.fontFamily!;
+export const colors = {
+  pink: 'oklch(76% 0.27 336)', // rgba(255, 118, 225, 1)
+  red: 'oklch(70% 0.25 27)', // rgba(255, 93, 83, 1)
+  green: 'oklch(76% 0.22 163)', // rgba(4, 210, 149, 1)
+  yellow: 'oklch(86% 0.2 86)', // rgba(255, 200, 58, 1)
+  blue: 'oklch(73% 0.17 216)', // rgba(52, 187, 217, 1)
+} as const;
+
+export type Colors = typeof colors;
+export type ColorKey = keyof Colors;
+export type ColorValue = Colors[ColorKey];
 
 // https://unocss.dev/config/
 export default defineConfig({
@@ -14,33 +28,46 @@ export default defineConfig({
         ['vertical-align']: 'middle',
       },
     }),
+    presetTypography({
+      cssExtend: {
+        ['* > *:only-child']: {
+          'margin-block-start': 0,
+          'margin-block-end': 0,
+        },
+        ['* > *:first-child']: {
+          'margin-block-start': 0,
+        },
+        ['* > *:last-child']: {
+          'margin-block-end': 0,
+        },
+        ['h1, h2, h3, h4, h5, h6']: {
+          ['font-weight']: 900,
+          ['text-transform']: 'uppercase',
+        },
+        ['h1 a, h2 a, h3 a, h4 a, h5 a, h6 a']: {
+          ['font-weight']: 'inherit',
+          ['text-decoration']: 'none',
+        },
+        ['h1']: {
+          ['font-size']: '7rem',
+          color: '#ffffff',
+        },
+        ['h2']: {
+          ['font-size']: '1.5rem',
+        },
+        ['p, ul, ol, li, div']: {
+          color: '#ffffff',
+        },
+      },
+    }),
     presetWebFonts({
-      extendTheme: false,
       fonts: {
         sans: 'Inter:400,800,900',
       },
     }),
   ],
-  content: {
-    filesystem: ['nuxt.config.*'],
-  },
   theme: {
-    colors: {
-      pink: 'oklch(76% 0.27 336)', // rgba(255, 118, 225, 1)
-      red: 'oklch(70% 0.25 27)', // rgba(255, 93, 83, 1)
-      green: 'oklch(76% 0.22 163)', // rgba(4, 210, 149, 1)
-      yellow: 'oklch(86% 0.2 86)', // rgba(255, 200, 58, 1)
-      blue: 'oklch(73% 0.17 216)', // rgba(52, 187, 217, 1)
-    },
-    fontFamily: {
-      sans: ['Inter', defaultSans].join(','),
-    },
-  },
-  extendTheme(theme) {
-    theme.colors = {
-      ...theme.colors,
-      primary: theme.colors.pink,
-    };
+    colors,
   },
   shortcuts: [
     {
@@ -53,37 +80,13 @@ export default defineConfig({
       'dot-outlined': 'outlined bg-transparent',
     },
   ],
-  rules: [
-    [
-      /^grid-(cols|rows)-(fit|fill)-(.+)$/,
-      ([, d, m, s]: string[], { theme }) => {
-        const directions: Record<string, string> = {
-          cols: 'columns',
-          rows: 'rows',
-        };
-
-        const modes: Record<string, string> = {
-          fit: 'auto-fit',
-          fill: 'auto-fill',
-        };
-
-        const v =
-          theme.width?.[s] ??
-          theme.spacing?.[s] ??
-          h.bracket.cssvar.global.rem(s);
-
-        if (v === null || v === undefined) return;
-
-        return {
-          [`grid-template-${directions[d]}`]: `repeat(${modes[m]}, minmax(min(100%, ${v}), 1fr))`,
-        };
-      },
-      {
-        autocomplete: [
-          'grid-(cols|rows)-(fit|fill)-$width',
-          'grid-(cols|rows)-(fit|fill)-<num>',
-        ],
-      },
-    ],
-  ],
+  safelist: Object.keys(colors).flatMap((color) => [
+    `prose-${color}`,
+    `b-${color}`,
+    `bg-${color}`,
+    `text-${color}`,
+    `hover:b-${color}`,
+    `hover:bg-${color}`,
+    `hover:text-${color}`,
+  ]),
 });

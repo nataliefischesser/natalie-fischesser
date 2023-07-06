@@ -1,7 +1,8 @@
 <script setup lang="ts">
 definePageMeta({
-  contentTitle: 'Get In Touch',
-  contentClass: 'bg-yellow',
+  layout: 'primary',
+  title: 'Get In Touch',
+  color: 'yellow',
 });
 
 useHead({ title: 'Contact' });
@@ -10,19 +11,26 @@ useHead({ title: 'Contact' });
 <template>
   <PageBase class="flex items-center justify-center">
     <div class="flex flex-wrap items-center justify-center gap-6 sm:gap-8">
-      <ContactLink
-        href="https://www.linkedin.com/in/natalie-fischesser/"
+      <AppIconLink
+        to="https://www.linkedin.com/in/natalie-fischesser/"
         title="LinkedIn"
         icon="i-fa-brands-linkedin-in"
+        color="yellow"
       />
 
-      <ContactLink
-        href="mailto:nfischesser@gmail.com"
+      <AppIconLink
+        to="mailto:nfischesser@gmail.com"
         title="Email"
         icon="i-mdi-email"
+        color="yellow"
       />
 
-      <ContactLink href="sms:5555555555" title="Text" icon="i-mdi-message" />
+      <AppIconLink
+        to="sms:5555555555"
+        title="Text"
+        icon="i-mdi-message"
+        color="yellow"
+      />
     </div>
   </PageBase>
 </template>

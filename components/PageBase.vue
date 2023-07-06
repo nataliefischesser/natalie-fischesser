@@ -1,5 +1,5 @@
 <template>
-  <div class="grow basis-50% p-content">
+  <div class="grow p-content">
     <slot />
   </div>
 </template>

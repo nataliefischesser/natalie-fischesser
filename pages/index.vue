@@ -1,7 +1,8 @@
 <script setup lang="ts">
 definePageMeta({
-  contentTitle: 'Hey! What’s Good?',
-  contentClass: 'bg-primary',
+  layout: 'primary',
+  title: 'Hey! What’s Good?',
+  color: 'pink',
 });
 
 useHead({ title: 'Home' });
@@ -20,12 +21,13 @@ useHead({ title: 'Home' });
         class="h-20em w-20em flex items-center justify-center rounded-full bg-blue"
       />
 
-      <NuxtLink
+      <AppPillLink
         to="/about"
-        class="col-span-3 h-20em flex items-center justify-center b-2em outlined b-red rounded-full text-1em text-red transition active:scale-100 hover:scale-105 interactive hover:bg-red hover:text-black"
+        color="red"
+        class="col-span-3 h-20em b-2em text-1em active:scale-100 hover:scale-105"
       >
         <span class="text-8em text-heading">About Me</span>
-      </NuxtLink>
+      </AppPillLink>
 
       <div
         class="col-span-4 h-20em flex items-center justify-center rounded-full bg-pink"
@@ -51,12 +53,13 @@ useHead({ title: 'Home' });
         class="h-20em w-20em flex items-center justify-center rounded-full bg-blue"
       />
 
-      <NuxtLink
+      <AppPillLink
         to="/portfolio"
-        class="col-span-3 h-20em flex items-center justify-center b-2em outlined b-green rounded-full text-1em text-green transition active:scale-100 hover:scale-105 interactive hover:bg-green hover:text-black"
+        color="green"
+        class="col-span-3 h-20em b-2em text-1em active:scale-100 hover:scale-105"
       >
         <span class="text-8em text-heading">Portfolio</span>
-      </NuxtLink>
+      </AppPillLink>
 
       <div
         class="h-20em w-20em flex items-center justify-center rounded-full bg-yellow"
@@ -82,12 +85,13 @@ useHead({ title: 'Home' });
         class="h-20em w-20em flex items-center justify-center rounded-full bg-green"
       />
 
-      <NuxtLink
+      <AppPillLink
         to="/contact"
-        class="col-span-4 h-20em flex items-center justify-center b-2em outlined b-yellow rounded-full text-1em text-yellow transition active:scale-100 hover:scale-105 interactive hover:bg-yellow hover:text-black"
+        color="yellow"
+        class="col-span-4 h-20em b-2em text-1em active:scale-100 hover:scale-105"
       >
         <span class="text-8em text-heading">Get In Touch</span>
-      </NuxtLink>
+      </AppPillLink>
 
       <div
         class="h-20em w-20em flex items-center justify-center rounded-full bg-red"
