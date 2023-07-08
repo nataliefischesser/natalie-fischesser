@@ -10,92 +10,128 @@ useHead({ title: 'Home' });
 
 <template>
   <PageBase class="flex flex-col items-center justify-center">
-    <aside
+    <BoardContainer
       class="grid grid-cols-5 grid-rows-7 gap-8 text-center text-0.6vi xl:text-0.3vi"
     >
-      <div
-        class="h-20em w-20em flex items-center justify-center rounded-full bg-yellow"
-      />
+      <BoardPiece class="h-20em w-20em">
+        <div
+          class="h-full w-full flex items-center justify-center rounded-full bg-yellow"
+        />
+      </BoardPiece>
 
-      <div
-        class="h-20em w-20em flex items-center justify-center rounded-full bg-blue"
-      />
+      <BoardPiece class="h-20em w-20em">
+        <div
+          class="h-full w-full flex items-center justify-center rounded-full bg-blue"
+        />
+      </BoardPiece>
 
-      <AppPillLink
-        to="/about"
-        color="red"
-        class="col-span-3 h-20em b-2em text-1em active:scale-100 hover:scale-105"
-      >
-        <span class="text-8em text-heading">About Me</span>
-      </AppPillLink>
+      <BoardPiece class="col-span-3 h-20em">
+        <AppPillLink
+          to="/about"
+          color="red"
+          class="h-full w-full b-2em text-1em active:scale-100 hover:scale-105"
+        >
+          <span class="text-8em text-heading">About Me</span>
+        </AppPillLink>
+      </BoardPiece>
 
-      <div
-        class="col-span-4 h-20em flex items-center justify-center rounded-full bg-pink"
-      />
+      <BoardPiece class="col-span-4 h-20em">
+        <div
+          class="h-full w-full flex items-center justify-center rounded-full bg-pink"
+        />
+      </BoardPiece>
 
-      <div
-        class="h-20em w-20em flex items-center justify-center rounded-full bg-yellow"
-      />
+      <BoardPiece class="h-20em w-20em">
+        <div
+          class="h-full w-full flex items-center justify-center rounded-full bg-yellow"
+        />
+      </BoardPiece>
 
-      <div
-        class="col-span-2 h-20em flex items-center justify-center rounded-full bg-yellow"
-      />
+      <BoardPiece class="col-span-2 h-20em">
+        <div
+          class="h-full w-full flex items-center justify-center rounded-full bg-yellow"
+        />
+      </BoardPiece>
 
-      <div
-        class="h-20em w-20em flex items-center justify-center rounded-full bg-blue"
-      />
+      <BoardPiece class="h-20em w-20em">
+        <div
+          class="h-full w-full flex items-center justify-center rounded-full bg-blue"
+        />
+      </BoardPiece>
 
-      <div
-        class="col-span-2 h-20em flex items-center justify-center rounded-full bg-red"
-      />
+      <BoardPiece class="col-span-2 h-20em">
+        <div
+          class="h-full w-full flex items-center justify-center rounded-full bg-red"
+        />
+      </BoardPiece>
 
-      <div
-        class="h-20em w-20em flex items-center justify-center rounded-full bg-blue"
-      />
+      <BoardPiece class="h-20em w-20em">
+        <div
+          class="h-full w-full flex items-center justify-center rounded-full bg-blue"
+        />
+      </BoardPiece>
 
-      <AppPillLink
-        to="/portfolio"
-        color="green"
-        class="col-span-3 h-20em b-2em text-1em active:scale-100 hover:scale-105"
-      >
-        <span class="text-8em text-heading">Portfolio</span>
-      </AppPillLink>
+      <BoardPiece class="col-span-3 h-20em">
+        <AppPillLink
+          to="/portfolio"
+          color="green"
+          class="h-full w-full b-2em text-1em active:scale-100 hover:scale-105"
+        >
+          <span class="text-8em text-heading">Portfolio</span>
+        </AppPillLink>
+      </BoardPiece>
 
-      <div
-        class="h-20em w-20em flex items-center justify-center rounded-full bg-yellow"
-      />
+      <BoardPiece class="h-20em w-20em">
+        <div
+          class="h-full w-full flex items-center justify-center rounded-full bg-yellow"
+        />
+      </BoardPiece>
 
-      <div
-        class="col-span-full h-20em flex items-center justify-center rounded-full bg-pink"
-      />
+      <BoardPiece class="col-span-full h-20em">
+        <div
+          class="h-full w-full flex items-center justify-center rounded-full bg-pink"
+        />
+      </BoardPiece>
 
-      <div
-        class="h-20em w-20em flex items-center justify-center rounded-full bg-red"
-      />
+      <BoardPiece class="h-20em w-20em">
+        <div
+          class="h-full w-full flex items-center justify-center rounded-full bg-red"
+        />
+      </BoardPiece>
 
-      <div
-        class="col-span-2 h-20em flex items-center justify-center rounded-full bg-blue"
-      />
+      <BoardPiece class="col-span-2 h-20em">
+        <div
+          class="h-full w-full flex items-center justify-center rounded-full bg-blue"
+        />
+      </BoardPiece>
 
-      <div
-        class="h-20em w-20em flex items-center justify-center rounded-full bg-pink"
-      />
+      <BoardPiece class="h-20em w-20em">
+        <div
+          class="h-full w-full flex items-center justify-center rounded-full bg-pink"
+        />
+      </BoardPiece>
 
-      <div
-        class="h-20em w-20em flex items-center justify-center rounded-full bg-green"
-      />
+      <BoardPiece class="h-20em w-20em">
+        <div
+          class="h-full w-full flex items-center justify-center rounded-full bg-green"
+        />
+      </BoardPiece>
 
-      <AppPillLink
-        to="/contact"
-        color="yellow"
-        class="col-span-4 h-20em b-2em text-1em active:scale-100 hover:scale-105"
-      >
-        <span class="text-8em text-heading">Get In Touch</span>
-      </AppPillLink>
+      <BoardPiece class="col-span-4 h-20em">
+        <AppPillLink
+          to="/contact"
+          color="yellow"
+          class="h-full w-full b-2em text-1em active:scale-100 hover:scale-105"
+        >
+          <span class="text-8em text-heading">Get In Touch</span>
+        </AppPillLink>
+      </BoardPiece>
 
-      <div
-        class="h-20em w-20em flex items-center justify-center rounded-full bg-red"
-      />
-    </aside>
+      <BoardPiece class="h-20em w-20em">
+        <div
+          class="h-full w-full flex items-center justify-center rounded-full bg-red"
+        />
+      </BoardPiece>
+    </BoardContainer>
   </PageBase>
 </template>

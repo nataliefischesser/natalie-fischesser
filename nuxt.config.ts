@@ -2,7 +2,12 @@ import { slideYFadeTransition, scaleFadeTransition } from './utils/transitions';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@unocss/nuxt', '@nuxt/content', '@vueuse/nuxt'],
+  modules: [
+    '@unocss/nuxt',
+    '@nuxt/content',
+    '@vueuse/nuxt',
+    '@vueuse/motion/nuxt',
+  ],
   experimental: {
     typedPages: true,
   },
