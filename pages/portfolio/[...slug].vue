@@ -12,7 +12,7 @@ if (!page.value) {
 </script>
 
 <template>
-  <PageBase>
+  <PageBase class="mx-auto max-w-content">
     <AppIconLink
       to="/portfolio"
       title="Back"
@@ -21,7 +21,10 @@ if (!page.value) {
       class="mbe-8"
     />
 
-    <ContentDoc class="prose" :class="{ [`prose-${page.color}`]: page.color }">
+    <ContentDoc
+      class="max-w-full prose"
+      :class="{ [`prose-${page.color}`]: page.color }"
+    >
       <template #not-found>
         <h1 class="text-3xl">
           Portfolio piece was not found.
