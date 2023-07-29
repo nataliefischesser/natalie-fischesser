@@ -2,8 +2,8 @@ import {
   defineConfig,
   presetIcons,
   presetTypography,
+  presetUno,
   presetWebFonts,
-  presetWind,
 } from 'unocss';
 
 export const colors = {
@@ -21,7 +21,7 @@ export type ColorValue = Colors[ColorKey];
 // https://unocss.dev/config/
 export default defineConfig({
   presets: [
-    presetWind(),
+    presetUno(),
     presetIcons({
       extraProperties: {
         display: 'inline-block',
