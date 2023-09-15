@@ -10,6 +10,8 @@ export default defineNuxtConfig({
   ],
   experimental: {
     typedPages: true,
+    headNext: true,
+    asyncContext: true,
   },
   content: {
     documentDriven: true,
