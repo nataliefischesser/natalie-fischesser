@@ -1,6 +1,6 @@
 <script lang="ts">
 import { type NuxtLinkProps } from 'nuxt/app';
-import { type ColorKey } from 'uno.config';
+import type { ColorKey } from '~/uno.config';
 
 export interface AppPillLinkBaseProps {
   color?: ColorKey;

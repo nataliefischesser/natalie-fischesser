@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { type ColorKey } from 'uno.config';
+import { type ColorKey } from '~/uno.config';
 
 const { page, prev, next } = useContent();
 
