@@ -17,7 +17,7 @@
       </header>
 
       <main class="flex grow items-center @container/main">
-        <Transition v-bind="slideYFadeTransition" appear>
+        <Transition v-bind="slideYFadeTransition">
           <h2
             v-if="$route.meta.title"
             :key="$route.path"

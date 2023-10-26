@@ -10,28 +10,30 @@
     "lint": "eslint . --ext .js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts,.vue --no-fix --ignore-path .gitignore --max-warnings=0",
     "type-check": "vue-tsc --noEmit",
     "test": "run-p lint type-check",
-    "generate-ico": "npx -y icon-gen@latest -i public/favicon.svg -o ./public --ico --ico-name favicon --ico-sizes 16,32"
+    "generate-ico": "npx -y icon-gen@latest -i ./public/favicon.svg -o ./public --ico --ico-name favicon --ico-sizes 16,32"
   },
   "devDependencies": {
-    "@csstools/postcss-oklab-function": "^3.0.6",
+    "@csstools/postcss-oklab-function": "^3.0.7",
     "@iconify-json/fa-brands": "^1.1.5",
-    "@iconify-json/mdi": "^1.1.54",
-    "@iconify-json/simple-icons": "^1.1.73",
+    "@iconify-json/mdi": "^1.1.55",
+    "@iconify-json/simple-icons": "^1.1.76",
     "@nuxt/content": "^2.8.5",
-    "@nuxt/devtools": "^1.0.0-beta.0",
+    "@nuxt/devtools": "latest",
     "@nuxt/eslint-config": "^0.2.0",
     "@rushstack/eslint-patch": "^1.5.1",
     "@types/node": "~18.17.19",
-    "@unocss/eslint-config": "^0.56.5",
-    "@unocss/nuxt": "^0.56.5",
+    "@unocss/eslint-config": "^0.57.1",
+    "@unocss/nuxt": "^0.57.1",
     "@vue/eslint-config-prettier": "^8.0.0",
     "@vueuse/motion": "^2.0.0",
-    "@vueuse/nuxt": "^10.4.1",
-    "eslint": "^8.50.0",
+    "@vueuse/nuxt": "^10.5.0",
+    "eslint": "^8.52.0",
     "npm-run-all": "^4.1.5",
-    "nuxt": "^3.7.4",
+    "nuxt": "^3.8.0",
     "prettier": "^3.0.3",
     "typescript": "^5.2.2",
-    "vue-tsc": "^1.8.15"
+    "vue": "^3.3.7",
+    "vue-router": "^4.2.5",
+    "vue-tsc": "^1.8.22"
   }
 }

@@ -19,7 +19,7 @@ const unlock = () => {
 
 <template>
   <PageBase class="flex items-center justify-center">
-    <Transition v-bind="scaleFadeTransition" appear>
+    <Transition v-bind="scaleFadeTransition">
       <ContentList v-if="unlocked" v-slot="{ list }" path="/portfolio">
         <nav
           aria-label="Portfolio"

@@ -9,15 +9,13 @@ export default defineNuxtConfig({
     '@vueuse/motion/nuxt',
   ],
   experimental: {
-    typedPages: true,
-    headNext: true,
+    appManifest: false, // https://github.com/unjs/nitro/issues/1844
     asyncContext: true,
+    headNext: true,
+    typedPages: true,
   },
   content: {
     documentDriven: true,
-  },
-  devtools: {
-    enabled: true,
   },
   app: {
     layoutTransition: slideYFadeTransition,
