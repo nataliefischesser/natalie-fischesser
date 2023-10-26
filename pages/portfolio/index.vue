@@ -15,27 +15,32 @@ const unlock = () => {
 
   unlocked.value = true;
 };
+
+const menu = useRouteMenu([
+  '/portfolio/spenio',
+  '/portfolio/wellness',
+  '/portfolio/idealab',
+]);
 </script>
 
 <template>
   <PageBase class="flex items-center justify-center">
     <Transition v-bind="scaleFadeTransition">
-      <ContentList v-if="unlocked" v-slot="{ list }" path="/portfolio">
-        <nav
-          aria-label="Portfolio"
-          class="flex flex-wrap items-center justify-center gap-6"
+      <nav
+        v-if="unlocked"
+        aria-label="Portfolio"
+        class="flex flex-wrap items-center justify-center gap-6"
+      >
+        <NuxtLink
+          v-for="item in menu"
+          :key="item.path"
+          :to="item.path"
+          class="aspect-square w-40 flex items-center justify-center rounded-2xl text-heading text-black interactive"
+          :class="{ [`bg-${item.meta.color}`]: item.meta.color }"
         >
-          <NuxtLink
-            v-for="item in list"
-            :key="item._path"
-            :to="item._path"
-            class="aspect-square w-40 flex items-center justify-center rounded-2xl text-heading text-black interactive"
-            :class="{ [`bg-${item.color}`]: item.color }"
-          >
-            {{ item.title }}
-          </NuxtLink>
-        </nav>
-      </ContentList>
+          {{ item.meta.title }}
+        </NuxtLink>
+      </nav>
 
       <form
         v-else
