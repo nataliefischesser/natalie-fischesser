@@ -4,7 +4,6 @@ import { slideYFadeTransition, scaleFadeTransition } from './utils/transitions';
 export default defineNuxtConfig({
   modules: ['@unocss/nuxt', '@vueuse/nuxt', '@vueuse/motion/nuxt'],
   experimental: {
-    appManifest: false, // https://github.com/unjs/nitro/issues/1844
     asyncContext: true,
     headNext: true,
     typedPages: true,
