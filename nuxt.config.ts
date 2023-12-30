@@ -3,6 +3,10 @@ import { slideYFadeTransition, scaleFadeTransition } from './utils/transitions';
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: ['@unocss/nuxt', '@vueuse/nuxt', '@vueuse/motion/nuxt'],
+  features: {
+    // Remove when fixed https://github.com/unocss/unocss/issues/3468
+    inlineStyles: false,
+  },
   experimental: {
     asyncContext: true,
     headNext: true,

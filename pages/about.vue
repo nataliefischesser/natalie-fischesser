@@ -12,7 +12,7 @@ useHead({ title: 'About' });
   <PageBase class="flex flex-col gap-10">
     <div class="grid gap-10 sm:grid-cols-[1fr_8rem]">
       <div
-        class="flex items-center rounded-2xl bg-pink p-8 py-12 text-2xl font-800 text-black"
+        class="flex items-center rounded-2xl bg-pink p-8 py-12 text-2xl text-black font-800"
       >
         <span>
           I'm a Visual Designer with 15+ years of experience that is all about
@@ -34,11 +34,11 @@ useHead({ title: 'About' });
         <i class="i-mdi-arrow-down scale-200" />
       </div>
 
-      <h3 class="text-11 text-heading tracking-widest text-red">Skills</h3>
+      <h3 class="text-11 text-heading text-red tracking-widest">Skills</h3>
     </div>
 
     <ul
-      class="list-disc columns-1 pis-8 text-xl font-900 text-gray-200 sm:columns-2 children:p-1"
+      class="list-disc columns-1 pis-8 text-xl text-gray-200 font-900 sm:columns-2 children:p-1"
     >
       <li>User Research</li>
       <li>Design Systems</li>
@@ -59,7 +59,7 @@ useHead({ title: 'About' });
         <i class="i-mdi-star scale-150" />
       </div>
 
-      <h3 class="text-11 text-heading tracking-widest text-yellow">
+      <h3 class="text-11 text-heading text-yellow tracking-widest">
         Top Tools
       </h3>
     </div>

@@ -9,15 +9,15 @@ const target = ref<HTMLElement>();
 
 const randomDelay = Math.random() * 150;
 
-const transition: Transition = {
+const transition = {
   type: 'spring',
   stiffness: 150,
   damping: 30,
   mass: 0.25,
   delay: randomDelay,
-};
+} satisfies Transition;
 
-const variants = ref<MotionVariants>({
+const variants = {
   initial: {
     opacity: 0,
     scale: 0.7,
@@ -28,7 +28,7 @@ const variants = ref<MotionVariants>({
     scale: 1,
     transition,
   },
-});
+} satisfies MotionVariants;
 
 useMotion(target, variants);
 </script>
