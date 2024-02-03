@@ -3,6 +3,7 @@ import {
   useMotion,
   type MotionVariants,
   type Transition,
+  // @ts-expect-error declaration issues fixed upstream and waiting on release
 } from '@vueuse/motion';
 
 const target = ref<HTMLElement>();
