@@ -1,18 +1,16 @@
-<script lang="ts">
-import { type NuxtLinkProps } from 'nuxt/app';
-import { type ColorKey } from '~/uno.config';
-
-export interface AppIconLinkBaseProps {
-  title: string;
-  icon: string;
-  color?: ColorKey;
-}
-
-export type AppIconLinkProps = AppIconLinkBaseProps & NuxtLinkProps;
-</script>
-
 <script setup lang="ts">
-const props = withDefaults(defineProps<AppIconLinkProps>(), { color: 'pink' });
+import type { NuxtLinkProps } from 'nuxt/app';
+import type { ColorKey } from '~/uno.config';
+
+const props = withDefaults(
+  defineProps<{
+    to: NuxtLinkProps['to'];
+    title: string;
+    icon: string;
+    color?: ColorKey;
+  }>(),
+  { color: 'pink' },
+);
 
 const nuxtLinkProps = computed(() => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
