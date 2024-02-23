@@ -3,7 +3,6 @@ import {
   useMotion,
   type MotionVariants,
   type Transition,
-  // @ts-expect-error declaration issues fixed upstream and waiting on release
 } from '@vueuse/motion';
 
 const target = ref<HTMLElement>();
@@ -29,7 +28,7 @@ const variants = {
     scale: 1,
     transition,
   },
-} satisfies MotionVariants;
+} satisfies MotionVariants<string>;
 
 useMotion(target, variants);
 </script>
