@@ -8,7 +8,7 @@ definePageMeta({
 useHead({ title: 'Portfolio' });
 
 const password = ref('');
-const unlocked = useSessionStorage('portfolio-unlocked', false);
+const unlocked = ref(false);
 
 const unlock = () => {
   if (password.value !== 'test') return;

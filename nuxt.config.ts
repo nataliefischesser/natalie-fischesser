@@ -2,7 +2,12 @@ import { slideYFadeTransition, scaleFadeTransition } from './utils/transitions';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@unocss/nuxt', '@vueuse/nuxt', '@vueuse/motion/nuxt'],
+  modules: [
+    '@nuxt/eslint',
+    '@unocss/nuxt',
+    '@vueuse/nuxt',
+    '@vueuse/motion/nuxt',
+  ],
   experimental: {
     asyncContext: true,
     headNext: true,
