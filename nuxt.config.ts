@@ -17,9 +17,6 @@ export default defineNuxtConfig({
     layoutTransition: slideYFadeTransition,
     pageTransition: scaleFadeTransition,
   },
-  typescript: {
-    shim: false,
-  },
   css: ['@/assets/css/main.css'],
   postcss: {
     plugins: {
