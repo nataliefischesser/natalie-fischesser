@@ -27,7 +27,7 @@ const menu = useRouteMenu([
   <PageBase class="flex items-center justify-center">
     <ClientOnly>
       <template #fallback>
-        <i class="i-mdi-loading text-green text-32 animate-spin" />
+        <i class="i-svg-spinners-3-dots-move text-green text-24" />
       </template>
 
       <Transition v-bind="scaleFadeTransition">
