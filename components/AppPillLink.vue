@@ -11,7 +11,6 @@ const props = withDefaults(
 );
 
 const nuxtLinkProps = computed(() => {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { color, ...rest } = props;
   return rest;
 });
