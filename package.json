@@ -2,7 +2,7 @@
   "name": "natalie-fischesser",
   "private": true,
   "type": "module",
-  "packageManager": "pnpm@8.15.6",
+  "packageManager": "pnpm@9.0.4",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -21,11 +21,11 @@
     "@iconify-json/simple-icons": "^1.1.99",
     "@iconify-json/svg-spinners": "^1.1.2",
     "@nuxt/devtools": "latest",
-    "@nuxt/eslint": "^0.3.6",
+    "@nuxt/eslint": "^0.3.8",
     "@types/node": "~20.12.7",
-    "@unocss/eslint-config": "^0.59.1",
-    "@unocss/nuxt": "^0.59.1",
-    "@unocss/reset": "^0.59.1",
+    "@unocss/eslint-config": "^0.59.4",
+    "@unocss/nuxt": "^0.59.4",
+    "@unocss/reset": "^0.59.4",
     "@vueuse/core": "^10.9.0",
     "@vueuse/motion": "^2.1.0",
     "@vueuse/nuxt": "^10.9.0",
@@ -36,9 +36,9 @@
     "nuxt": "^3.11.2",
     "prettier": "^3.2.5",
     "typescript": "^5.4.5",
-    "unocss": "^0.59.1",
-    "vue": "^3.4.21",
-    "vue-router": "^4.3.0",
-    "vue-tsc": "^2.0.12"
+    "unocss": "^0.59.4",
+    "vue": "^3.4.23",
+    "vue-router": "^4.3.2",
+    "vue-tsc": "^2.0.13"
   }
 }
