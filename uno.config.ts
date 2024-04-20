@@ -25,37 +25,37 @@ export default defineConfig({
     presetIcons({
       extraProperties: {
         display: 'inline-block',
-        ['vertical-align']: 'middle',
+        'vertical-align': 'middle',
       },
     }),
     presetTypography({
       cssExtend: {
-        ['* > *:only-child']: {
+        '* > *:only-child': {
           'margin-block-start': 0,
           'margin-block-end': 0,
         },
-        ['* > *:first-child']: {
+        '* > *:first-child': {
           'margin-block-start': 0,
         },
-        ['* > *:last-child']: {
+        '* > *:last-child': {
           'margin-block-end': 0,
         },
-        ['h1, h2, h3, h4, h5, h6']: {
-          ['font-weight']: 900,
-          ['text-transform']: 'uppercase',
+        'h1, h2, h3, h4, h5, h6': {
+          'font-weight': 900,
+          'text-transform': 'uppercase',
         },
-        ['h1 a, h2 a, h3 a, h4 a, h5 a, h6 a']: {
-          ['font-weight']: 'inherit',
-          ['text-decoration']: 'none',
+        'h1 a, h2 a, h3 a, h4 a, h5 a, h6 a': {
+          'font-weight': 'inherit',
+          'text-decoration': 'none',
         },
-        ['h1']: {
-          ['font-size']: '7rem',
+        h1: {
+          'font-size': '7rem',
           color: '#ffffff',
         },
-        ['h2']: {
-          ['font-size']: '1.5rem',
+        h2: {
+          'font-size': '1.5rem',
         },
-        ['p, ul, ol, li, div']: {
+        'p, ul, ol, li, div': {
           color: '#ffffff',
         },
       },
