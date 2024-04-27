@@ -8,8 +8,8 @@ const meta = {
 } as const;
 
 useHead({
-  title: meta.title,
-  titleTemplate: '%s | Natalie Fischesser',
+  titleTemplate: (title) =>
+    title ? `${title} - Natalie Fischesser` : meta.title,
   link: [
     { rel: 'icon', href: '/favicon.ico', sizes: 'any' },
     { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' },

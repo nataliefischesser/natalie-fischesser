@@ -4,8 +4,6 @@ definePageMeta({
   title: 'Hey! What’s Good?',
   color: 'pink',
 });
-
-useHead({ title: 'Home' });
 </script>
 
 <template>
