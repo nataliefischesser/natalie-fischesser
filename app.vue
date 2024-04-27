@@ -19,7 +19,10 @@ useHead({
     { name: 'theme-color', content: '#ff76e1' },
   ],
   htmlAttrs: { lang: 'en' },
-  bodyAttrs: { class: 'h-viewport bg-black font-sans text-white' },
+  bodyAttrs: {
+    class:
+      '[color-scheme:dark] min-h-viewport bg-black text-white font-sans accent-pink',
+  },
 });
 
 useSeoMeta({

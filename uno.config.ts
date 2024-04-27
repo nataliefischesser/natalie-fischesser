@@ -71,7 +71,7 @@ export default defineConfig({
   },
   shortcuts: [
     {
-      'h-viewport': 'min-h-full min-h-100vh min-h-100dvh',
+      'min-h-viewport': 'min-h-full min-h-screen min-h-100dvh',
       'p-content': 'p-8 sm:p-10',
       'max-w-content': 'max-w-4xl',
       'text-heading': 'text-2xl font-900 lh-1em uppercase',
