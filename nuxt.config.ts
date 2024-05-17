@@ -4,6 +4,7 @@ import { slideYFadeTransition, scaleFadeTransition } from './utils/transitions';
 export default defineNuxtConfig({
   modules: [
     '@nuxt/eslint',
+    '@nuxt/fonts',
     '@unocss/nuxt',
     '@vueuse/nuxt',
     '@vueuse/motion/nuxt',

@@ -1,10 +1,4 @@
-import {
-  defineConfig,
-  presetIcons,
-  presetTypography,
-  presetUno,
-  presetWebFonts,
-} from 'unocss';
+import { defineConfig, presetIcons, presetTypography, presetUno } from 'unocss';
 
 export const colors = {
   pink: 'oklch(76% 0.27 336)', // rgba(255, 118, 225, 1)
@@ -60,14 +54,12 @@ export default defineConfig({
         },
       },
     }),
-    presetWebFonts({
-      fonts: {
-        sans: 'Inter:400,800,900',
-      },
-    }),
   ],
   theme: {
     colors,
+    fontFamily: {
+      sans: 'Inter, sans-serif',
+    },
   },
   shortcuts: [
     {
