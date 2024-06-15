@@ -1,4 +1,4 @@
-import { type ColorKey } from '../uno.config';
+import { type ColorKey } from '~~/uno.config';
 
 interface AppRouteMeta {
   name: DirectoryValue;

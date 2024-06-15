@@ -1,4 +1,7 @@
-import { slideYFadeTransition, scaleFadeTransition } from './utils/transitions';
+import {
+  slideYFadeTransition,
+  scaleFadeTransition,
+} from './app/utils/transitions';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -21,7 +24,7 @@ export default defineNuxtConfig({
     layoutTransition: slideYFadeTransition,
     pageTransition: scaleFadeTransition,
   },
-  css: ['@/assets/css/main.css'],
+  css: ['~/assets/css/main.css'],
   postcss: {
     plugins: {
       '@csstools/postcss-oklab-function': { preserve: true },

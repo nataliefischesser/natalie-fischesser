@@ -1,17 +1,19 @@
 <script setup lang="ts">
-import type { NuxtLinkProps } from 'nuxt/app';
-import type { ColorKey } from '~/uno.config';
+import type { NuxtLinkProps } from '#app';
+import type { ColorKey } from '~~/uno.config';
 
 const props = withDefaults(
   defineProps<{
     to: NuxtLinkProps['to'];
+    title: string;
+    icon: string;
     color?: ColorKey;
   }>(),
   { color: 'pink' },
 );
 
 const nuxtLinkProps = computed(() => {
-  const { color, ...rest } = props;
+  const { title, icon, color, ...rest } = props;
   return rest;
 });
 </script>
@@ -19,9 +21,10 @@ const nuxtLinkProps = computed(() => {
 <template>
   <NuxtLink
     v-bind="nuxtLinkProps"
-    class="flex items-center justify-center gap-6 outlined rounded-full p-6 text-heading interactive hover:text-black"
+    class="dot dot-outlined interactive hover:text-black"
     :class="{ [`b-${color} text-${color} hover:bg-${color}`]: color }"
   >
-    <slot />
+    <i :class="icon" />
+    <span class="sr-only">{{ title }}</span>
   </NuxtLink>
 </template>
