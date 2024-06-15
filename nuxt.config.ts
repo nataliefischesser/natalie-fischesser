@@ -9,6 +9,9 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@vueuse/motion/nuxt',
   ],
+  future: {
+    compatibilityVersion: 4,
+  },
   experimental: {
     asyncContext: true,
     headNext: true,
