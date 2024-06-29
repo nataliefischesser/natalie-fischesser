@@ -1,5 +1,5 @@
 <template>
-  <LayoutBase>
+  <AppLayout>
     <slot />
-  </LayoutBase>
+  </AppLayout>
 </template>

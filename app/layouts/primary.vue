@@ -1,5 +1,5 @@
 <template>
-  <LayoutBase class="flex flex-col xl:flex-row">
+  <AppLayout class="flex flex-col xl:flex-row">
     <div
       class="flex basis-50% flex-col gap-8 text-black transition-colors duration-300 p-content"
       :class="{ [`bg-${$route.meta.color}`]: $route.meta.color }"
@@ -32,5 +32,5 @@
     <div class="contents children:basis-50%">
       <slot />
     </div>
-  </LayoutBase>
+  </AppLayout>
 </template>
