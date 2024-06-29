@@ -6,7 +6,7 @@ definePageMeta({
 </script>
 
 <template>
-  <PageBase class="mx-auto max-w-content">
+  <AppMain class="mx-auto max-w-content">
     <AppIconLink
       to="/portfolio"
       title="Back"
@@ -58,5 +58,5 @@ definePageMeta({
         <NuxtLink href="https://ideas.moserit.com">ideas.moserit.com</NuxtLink>
       </p>
     </div>
-  </PageBase>
+  </AppMain>
 </template>

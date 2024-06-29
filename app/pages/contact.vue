@@ -9,7 +9,7 @@ useHead({ title: 'Contact' });
 </script>
 
 <template>
-  <PageBase class="flex items-center justify-center">
+  <AppMain class="flex items-center justify-center">
     <div class="flex flex-wrap items-center justify-center gap-6 sm:gap-8">
       <AppIconLink
         to="https://www.linkedin.com/in/natalie-fischesser/"
@@ -32,5 +32,5 @@ useHead({ title: 'Contact' });
         color="yellow"
       />
     </div>
-  </PageBase>
+  </AppMain>
 </template>

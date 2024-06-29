@@ -7,7 +7,7 @@ definePageMeta({
 </script>
 
 <template>
-  <PageBase class="flex flex-col items-center justify-center">
+  <AppMain class="flex flex-col items-center justify-center">
     <BoardContainer>
       <BoardPiece class="h-20em w-20em">
         <svg
@@ -193,5 +193,5 @@ definePageMeta({
         </svg>
       </BoardPiece>
     </BoardContainer>
-  </PageBase>
+  </AppMain>
 </template>

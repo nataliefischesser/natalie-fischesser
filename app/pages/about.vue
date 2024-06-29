@@ -9,7 +9,7 @@ useHead({ title: 'About' });
 </script>
 
 <template>
-  <PageBase class="flex flex-col gap-10">
+  <AppMain class="flex flex-col gap-10">
     <div class="grid gap-10 sm:grid-cols-[1fr_8rem]">
       <div
         class="flex items-center rounded-2xl bg-pink p-8 py-12 text-2xl text-black font-800"
@@ -95,5 +95,5 @@ useHead({ title: 'About' });
         class="bg-blue"
       />
     </div>
-  </PageBase>
+  </AppMain>
 </template>
