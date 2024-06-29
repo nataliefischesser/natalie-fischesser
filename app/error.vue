@@ -14,14 +14,17 @@ useHead({ title });
 
 <template>
   <AppLayout class="grid place-items-center">
-    <div class="max-w-lg w-full flex flex-col gap-8">
+    <div class="max-w-lg w-full flex flex-col gap-8 text-xl">
       <h1 class="text-7xl text-heading text-pink">{{ title }}</h1>
 
-      <p class="text-balance text-xl leading-relaxed">
+      <p class="text-balance leading-relaxed">
         {{ message }}
       </p>
 
-      <NuxtLink href="/" class="text-pink underline">Go Back</NuxtLink>
+      <NuxtLink href="/" class="flex items-center gap-3 text-pink">
+        <i class="i-mdi-arrow-left scale-150" />
+        <span>Go Back</span>
+      </NuxtLink>
     </div>
   </AppLayout>
 </template>
