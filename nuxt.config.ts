@@ -18,7 +18,6 @@ export default defineNuxtConfig({
   },
   experimental: {
     asyncContext: true,
-    headNext: true,
     typedPages: true,
   },
   app: {
