@@ -5,7 +5,7 @@ import {
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2024-07-04',
+  compatibilityDate: '2024-07-23',
   modules: [
     '@nuxt/eslint',
     '@nuxt/fonts',
