@@ -1,6 +1,6 @@
 // @unocss-include
 
-import { type TransitionProps } from 'vue';
+import type { TransitionProps } from 'vue';
 
 export const fadeTransition = {
   enterFromClass: 'opacity-0',
