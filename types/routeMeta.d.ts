@@ -1,7 +1,6 @@
 import type { ColorKey } from '~~/uno.config';
 
 interface AppRouteMeta {
-  name: DirectoryValue;
   title: string;
   color: ColorKey;
 }
