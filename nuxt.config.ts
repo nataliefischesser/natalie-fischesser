@@ -18,6 +18,7 @@ export default defineNuxtConfig({
   },
   experimental: {
     asyncContext: true,
+    buildCache: true,
     typedPages: true,
   },
   app: {
