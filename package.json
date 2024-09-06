@@ -21,16 +21,16 @@
     "@iconify-json/simple-icons": "^1.2.1",
     "@iconify-json/svg-spinners": "^1.2.0",
     "@nuxt/devtools": "^1.4.1",
-    "@nuxt/eslint": "^0.5.5",
+    "@nuxt/eslint": "^0.5.6",
     "@nuxt/fonts": "^0.7.2",
     "@types/node": "~20.12.14",
     "@unocss/eslint-config": "^0.62.3",
     "@unocss/nuxt": "^0.62.3",
     "@unocss/reset": "^0.62.3",
     "@vueuse/core": "^11.0.3",
-    "@vueuse/motion": "^2.2.3",
+    "@vueuse/motion": "^2.2.5",
     "@vueuse/nuxt": "^11.0.3",
-    "eslint": "^9.9.1",
+    "eslint": "^9.10.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
     "npm-run-all2": "^6.2.2",
@@ -39,8 +39,8 @@
     "typescript": "^5.5.4",
     "unocss": "^0.62.3",
     "vite": "^5.4.3",
-    "vue": "^3.5.1",
+    "vue": "^3.5.3",
     "vue-router": "^4.4.3",
-    "vue-tsc": "^2.1.4"
+    "vue-tsc": "^2.1.6"
   }
 }
