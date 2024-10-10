@@ -21,7 +21,7 @@ useHead({
   htmlAttrs: { lang: 'en' },
   bodyAttrs: {
     class:
-      '[color-scheme:dark] min-h-viewport bg-black text-white font-sans accent-pink',
+      '[color-scheme:dark] min-h-viewport bg-black text-white font-sans antialiased accent-pink',
   },
 });
 
