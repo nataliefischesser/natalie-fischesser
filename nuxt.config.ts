@@ -5,7 +5,6 @@ import {
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  compatibilityDate: '2024-09-06',
   modules: [
     '@nuxt/eslint',
     '@nuxt/fonts',
@@ -13,6 +12,11 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@vueuse/motion/nuxt',
   ],
+  app: {
+    layoutTransition: slideYFadeTransition,
+    pageTransition: scaleFadeTransition,
+  },
+  css: ['~/assets/css/main.css'],
   future: {
     compatibilityVersion: 4,
   },
@@ -20,14 +24,17 @@ export default defineNuxtConfig({
     asyncContext: true,
     typedPages: true,
   },
-  app: {
-    layoutTransition: slideYFadeTransition,
-    pageTransition: scaleFadeTransition,
-  },
-  css: ['~/assets/css/main.css'],
+  compatibilityDate: '2024-09-06',
   postcss: {
     plugins: {
       '@csstools/postcss-oklab-function': { preserve: true },
+    },
+  },
+  eslint: {
+    config: {
+      nuxt: {
+        sortConfigKeys: true,
+      },
     },
   },
 });
