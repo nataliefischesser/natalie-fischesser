@@ -1,10 +1,10 @@
 <script setup lang="ts">
 const meta = {
   title: 'Natalie Fischesser - Visual UX Designer',
-  url: 'https://nataliefischesser.com/',
-  icon: '/favicon.svg',
   description:
     'I am passionate about creating amazing user experiences through thoughtfully built web applications.',
+  url: 'https://nataliefischesser.com',
+  icon: '/favicon.svg',
 } as const;
 
 useHead({
@@ -14,10 +14,6 @@ useHead({
     { rel: 'icon', href: '/favicon.ico', sizes: 'any' },
     { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' },
   ],
-  meta: [
-    { name: 'description', content: meta.description },
-    { name: 'theme-color', content: '#ff76e1' },
-  ],
   htmlAttrs: { lang: 'en' },
   bodyAttrs: {
     class:
@@ -26,6 +22,8 @@ useHead({
 });
 
 useSeoMeta({
+  themeColor: '#ff76e1',
+  description: meta.description,
   ogTitle: meta.title,
   ogDescription: meta.description,
   ogImage: meta.icon,
