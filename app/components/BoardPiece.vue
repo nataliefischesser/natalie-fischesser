@@ -5,7 +5,7 @@ import {
   type Transition,
 } from '@vueuse/motion';
 
-const target = ref<HTMLElement>();
+const targetElement = useTemplateRef('target');
 
 const randomDelay = Math.random() * 150;
 
@@ -30,7 +30,7 @@ const variants = {
   },
 } satisfies MotionVariants<string>;
 
-useMotion(target, variants);
+useMotion(targetElement, variants);
 </script>
 
 <template>
