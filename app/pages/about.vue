@@ -1,11 +1,11 @@
 <script setup lang="ts">
 definePageMeta({
-  layout: 'primary',
-  title: 'About Me',
-  color: 'red',
+  layout: "primary",
+  title: "About Me",
+  color: "red",
 });
 
-useHead({ title: 'About' });
+useHead({ title: "About" });
 </script>
 
 <template>

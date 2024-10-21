@@ -1,7 +1,7 @@
 <script setup lang="ts">
 definePageMeta({
-  title: 'Wellness',
-  color: 'blue',
+  title: "Wellness",
+  color: "blue",
 });
 </script>
 

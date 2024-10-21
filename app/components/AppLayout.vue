@@ -1,28 +1,28 @@
 <script setup lang="ts">
 const meta = {
-  title: 'Natalie Fischesser - Visual UX Designer',
+  title: "Natalie Fischesser - Visual UX Designer",
   description:
-    'I am passionate about creating amazing user experiences through thoughtfully built web applications.',
-  url: 'https://nataliefischesser.com',
-  icon: '/favicon.svg',
+    "I am passionate about creating amazing user experiences through thoughtfully built web applications.",
+  url: "https://nataliefischesser.com",
+  icon: "/favicon.svg",
 } as const;
 
 useHead({
   titleTemplate: (title) =>
     title ? `${title} - Natalie Fischesser` : meta.title,
   link: [
-    { rel: 'icon', href: '/favicon.ico', sizes: 'any' },
-    { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' },
+    { rel: "icon", href: "/favicon.ico", sizes: "any" },
+    { rel: "icon", href: "/favicon.svg", type: "image/svg+xml" },
   ],
-  htmlAttrs: { lang: 'en' },
+  htmlAttrs: { lang: "en" },
   bodyAttrs: {
     class:
-      '[color-scheme:dark] min-h-viewport bg-black text-white font-sans antialiased accent-pink',
+      "[color-scheme:dark] min-h-viewport bg-black text-white font-sans antialiased accent-pink",
   },
 });
 
 useSeoMeta({
-  themeColor: '#ff76e1',
+  themeColor: "#ff76e1",
   description: meta.description,
   ogTitle: meta.title,
   ogDescription: meta.description,
@@ -31,7 +31,7 @@ useSeoMeta({
   twitterTitle: meta.title,
   twitterDescription: meta.description,
   twitterImage: meta.icon,
-  twitterCard: 'summary',
+  twitterCard: "summary",
 });
 </script>
 

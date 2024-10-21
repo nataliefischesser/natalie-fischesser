@@ -1,25 +1,25 @@
 <script setup lang="ts">
 definePageMeta({
-  layout: 'primary',
-  title: 'Port­folio',
-  color: 'green',
+  layout: "primary",
+  title: "Port­folio",
+  color: "green",
 });
 
-useHead({ title: 'Portfolio' });
+useHead({ title: "Portfolio" });
 
-const password = ref('');
-const unlocked = useSessionStorage('portfolio-unlocked', false);
+const password = ref("");
+const unlocked = useSessionStorage("portfolio-unlocked", false);
 
 const unlock = () => {
-  if (password.value !== 'test') return;
+  if (password.value !== "test") return;
 
   unlocked.value = true;
 };
 
 const menu = useRouteMenu([
-  '/portfolio/spenio',
-  '/portfolio/wellness',
-  '/portfolio/idealab',
+  "/portfolio/spenio",
+  "/portfolio/wellness",
+  "/portfolio/idealab",
 ]);
 </script>
 

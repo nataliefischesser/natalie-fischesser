@@ -1,11 +1,11 @@
 <script setup lang="ts">
 definePageMeta({
-  layout: 'primary',
-  title: 'Get In Touch',
-  color: 'yellow',
+  layout: "primary",
+  title: "Get In Touch",
+  color: "yellow",
 });
 
-useHead({ title: 'Contact' });
+useHead({ title: "Contact" });
 </script>
 
 <template>

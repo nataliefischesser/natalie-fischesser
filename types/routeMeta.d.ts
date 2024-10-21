@@ -1,16 +1,16 @@
-import type { ColorKey } from '~~/uno.config';
+import type { ColorKey } from "~~/uno.config";
 
 interface AppRouteMeta {
   title: string;
   color: ColorKey;
 }
 
-declare module '#app' {
+declare module "#app" {
   // eslint-disable-next-line @typescript-eslint/no-empty-object-type
   interface PageMeta extends AppRouteMeta {}
 }
 
-declare module 'vue-router' {
+declare module "vue-router" {
   // eslint-disable-next-line @typescript-eslint/no-empty-object-type
   interface RouteMeta extends AppRouteMeta {}
 }

@@ -1,12 +1,12 @@
 <script setup lang="ts">
-import type { NuxtError } from 'nuxt/app';
+import type { NuxtError } from "nuxt/app";
 
 const props = defineProps<{ error: NuxtError }>();
 
 const title = computed(() => `Error ${props.error.statusCode}`);
 
 const errorMessage = toRef(() => props.error?.message ?? null);
-const fallbackMessage = 'An unknown error occurred';
+const fallbackMessage = "An unknown error occurred";
 const message = toRef(() => errorMessage.value || fallbackMessage);
 
 useHead({ title });

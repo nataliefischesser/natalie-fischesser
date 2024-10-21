@@ -1,8 +1,8 @@
 <script setup lang="ts">
 definePageMeta({
-  layout: 'primary',
-  title: 'Hey! What’s Good?',
-  color: 'pink',
+  layout: "primary",
+  title: "Hey! What’s Good?",
+  color: "pink",
 });
 </script>
 

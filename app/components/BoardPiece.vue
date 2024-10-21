@@ -3,14 +3,14 @@ import {
   useMotion,
   type MotionVariants,
   type Transition,
-} from '@vueuse/motion';
+} from "@vueuse/motion";
 
-const targetElement = useTemplateRef('target');
+const targetElement = useTemplateRef("target");
 
 const randomDelay = Math.random() * 150;
 
 const transition = {
-  type: 'spring',
+  type: "spring",
   stiffness: 150,
   damping: 30,
   mass: 0.25,

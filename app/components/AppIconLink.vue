@@ -1,15 +1,15 @@
 <script setup lang="ts">
-import type { NuxtLinkProps } from '#app';
-import type { ColorKey } from '~~/uno.config';
+import type { NuxtLinkProps } from "#app";
+import type { ColorKey } from "~~/uno.config";
 
 const props = withDefaults(
   defineProps<{
-    to: NuxtLinkProps['to'];
+    to: NuxtLinkProps["to"];
     title: string;
     icon: string;
     color?: ColorKey;
   }>(),
-  { color: 'pink' },
+  { color: "pink" },
 );
 
 const nuxtLinkProps = computed(() => {

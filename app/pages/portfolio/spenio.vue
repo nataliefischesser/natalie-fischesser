@@ -1,7 +1,7 @@
 <script setup lang="ts">
 definePageMeta({
-  title: 'Spenio',
-  color: 'green',
+  title: "Spenio",
+  color: "green",
 });
 </script>
 
