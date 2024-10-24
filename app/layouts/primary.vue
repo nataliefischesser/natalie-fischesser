@@ -5,13 +5,13 @@
       :class="{ [`bg-${$route.meta.color}`]: $route.meta.color }"
     >
       <header>
-        <h1
-          class="flex items-center gap-3 text-heading text-xl tracking-widest sm:text-2xl"
-        >
-          <i class="i-app-logo scale-125 text-9" />
-
-          <NuxtLink to="/" class="p-3 transition active:scale-98">
-            Natalie Fischesser
+        <h1 class="flex text-heading text-xl tracking-widest sm:text-2xl">
+          <NuxtLink
+            to="/"
+            class="flex items-center gap-2 transition active:scale-98"
+          >
+            <i class="i-app-logo text-11" />
+            <span class="p-3">Natalie Fischesser</span>
           </NuxtLink>
         </h1>
       </header>
