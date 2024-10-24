@@ -8,7 +8,7 @@
         <h1
           class="flex items-center gap-3 text-heading text-xl tracking-widest sm:text-2xl"
         >
-          <i class="i-mdi-dots-grid scale-125" />
+          <i class="i-app-logo scale-125 text-9" />
 
           <NuxtLink to="/" class="p-3 transition active:scale-98">
             Natalie Fischesser

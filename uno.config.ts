@@ -1,4 +1,6 @@
+import { resolve } from "pathe";
 import { defineConfig, presetIcons, presetTypography, presetUno } from "unocss";
+import { FileSystemIconLoader } from "@iconify/utils/lib/loader/node-loaders";
 
 export const colors = {
   pink: "oklch(76% 0.27 336)", // rgba(255, 118, 225, 1)
@@ -17,6 +19,9 @@ export default defineConfig({
   presets: [
     presetUno(),
     presetIcons({
+      collections: {
+        app: FileSystemIconLoader(resolve(__dirname, "./app/assets/icons")),
+      },
       extraProperties: {
         display: "inline-block",
         "vertical-align": "middle",
