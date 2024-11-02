@@ -24,7 +24,7 @@ export default defineNuxtConfig({
     asyncContext: true,
     typedPages: true,
   },
-  compatibilityDate: "2024-09-06",
+  compatibilityDate: "2024-11-02",
   postcss: {
     plugins: {
       "@csstools/postcss-oklab-function": { preserve: true },
