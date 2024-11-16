@@ -43,7 +43,7 @@ definePageMeta({
 
       <BoardPiece class="col-span-4 h-20em">
         <input
-          class="h-full w-full b-0.25em outlined rounded-full bg-transparent px-0.5em text-8em text-heading text-pink uppercase focus:outline-dashed"
+          class="h-full w-full b-0.25em outlined rounded-full bg-transparent p-inline-0.5em text-8em text-heading text-pink uppercase focus:outline-dashed"
         />
       </BoardPiece>
 

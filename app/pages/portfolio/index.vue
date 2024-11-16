@@ -57,7 +57,7 @@ const menu = useRouteMenu([
             v-model="password"
             type="password"
             placeholder="Enter Password"
-            class="h-28 max-w-full grow outlined rounded-full bg-transparent px-6 placeholder:text-heading text-2xl text-green placeholder:text-2xl placeholder:text-green placeholder:font-700"
+            class="h-28 max-w-full grow outlined rounded-full bg-transparent p-inline-6 placeholder:text-heading text-2xl text-green placeholder:text-2xl placeholder:text-green placeholder:font-700"
           />
 
           <button

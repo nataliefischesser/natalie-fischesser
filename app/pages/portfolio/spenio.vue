@@ -6,7 +6,7 @@ definePageMeta({
 </script>
 
 <template>
-  <AppMain class="mx-auto max-w-content">
+  <AppMain class="m-inline-auto max-w-content">
     <AppIconLink
       to="/portfolio"
       title="Back"
