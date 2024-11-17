@@ -1,11 +1,5 @@
 <script setup lang="ts">
-import {
-  useMotion,
-  type MotionVariants,
-  type Transition,
-} from "@vueuse/motion";
-
-const targetElement = useTemplateRef("target");
+import type { MotionVariants, Transition } from "@vueuse/motion";
 
 const randomDelay = Math.random() * 150;
 
@@ -29,12 +23,10 @@ const variants = {
     transition,
   },
 } satisfies MotionVariants<string>;
-
-useMotion(targetElement, variants);
 </script>
 
 <template>
-  <div ref="target">
+  <Motion :variants="variants">
     <slot />
-  </div>
+  </Motion>
 </template>
