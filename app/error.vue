@@ -21,7 +21,10 @@ useHead({ title });
         {{ message }}
       </p>
 
-      <NuxtLink href="/" class="flex items-center gap-3 text-pink">
+      <NuxtLink
+        :to="{ name: 'index' }"
+        class="flex items-center gap-3 text-pink"
+      >
         <i class="i-mdi-arrow-left scale-150" />
         <span>Go Back</span>
       </NuxtLink>

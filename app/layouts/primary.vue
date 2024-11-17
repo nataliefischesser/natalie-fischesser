@@ -7,7 +7,7 @@
       <header>
         <h1 class="flex text-heading text-xl tracking-widest sm:text-2xl">
           <NuxtLink
-            to="/"
+            :to="{ name: 'index' }"
             class="flex items-center gap-2 transition active:scale-98"
           >
             <i class="i-app-logo text-11" />

@@ -8,7 +8,7 @@ definePageMeta({
 <template>
   <AppMain class="m-inline-auto max-w-content">
     <AppIconLink
-      to="/portfolio"
+      :to="{ name: 'portfolio' }"
       title="Back"
       icon="i-mdi-arrow-left scale-200"
       :color="$route.meta.color"
@@ -55,7 +55,7 @@ definePageMeta({
       <h2>Website</h2>
 
       <p>
-        <NuxtLink href="https://wellness.moserit.com">
+        <NuxtLink to="https://wellness.moserit.com">
           wellness.moserit.com
         </NuxtLink>
       </p>

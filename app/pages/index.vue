@@ -33,7 +33,7 @@ definePageMeta({
 
       <BoardPiece class="col-span-3 h-20em">
         <AppPillLink
-          to="/about"
+          :to="{ name: 'about' }"
           color="red"
           class="h-full w-full b-2em text-1em active:scale-100 hover:scale-105"
         >
@@ -103,7 +103,7 @@ definePageMeta({
 
       <BoardPiece class="col-span-3 h-20em">
         <AppPillLink
-          to="/portfolio"
+          :to="{ name: 'portfolio' }"
           color="green"
           class="h-full w-full b-2em text-1em active:scale-100 hover:scale-105"
         >
@@ -169,7 +169,7 @@ definePageMeta({
 
       <BoardPiece class="col-span-4 h-20em">
         <AppPillLink
-          to="/contact"
+          :to="{ name: 'contact' }"
           color="yellow"
           class="h-full w-full b-2em text-1em active:scale-100 hover:scale-105"
         >
