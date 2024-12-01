@@ -11,9 +11,6 @@ importers:
       '@csstools/postcss-oklab-function':
         specifier: ^4.0.6
         version: 4.0.6(postcss@8.4.49)
-      '@iconify-json/fa-brands':
-        specifier: ^1.2.0
-        version: 1.2.0
       '@iconify-json/mdi':
         specifier: ^1.2.1
         version: 1.2.1
@@ -816,9 +813,6 @@ packages:
   '@humanwhocodes/retry@0.4.1':
     resolution: {integrity: sha512-c7hNEllBlenFTHBky65mhq8WD2kbN9Q6gk0bTk8lSBvc554jpXSkST1iePudpt7+A/AQvuHs9EMqjHDXMY1lrA==}
     engines: {node: '>=18.18'}
-
-  '@iconify-json/fa-brands@1.2.0':
-    resolution: {integrity: sha512-063zve/7GEfzEnlDQycVQbcrx6MD206bmrnWLYaPFvLcPVioN8DGPbOBzpy3/zI2RQFe/T+ZuCB8XWi+AmBR9w==}
 
   '@iconify-json/mdi@1.2.1':
     resolution: {integrity: sha512-dSkQU78gsZV6Yxnq78+LuX7jzeFC/5NAmz7O3rh558GimGFcwMVY/OtqRowIzjqJBmMmWZft7wkFV4TrwRXjlg==}
@@ -5187,10 +5181,6 @@ snapshots:
   '@humanwhocodes/retry@0.3.1': {}
 
   '@humanwhocodes/retry@0.4.1': {}
-
-  '@iconify-json/fa-brands@1.2.0':
-    dependencies:
-      '@iconify/types': 2.0.0
 
   '@iconify-json/mdi@1.2.1':
     dependencies:

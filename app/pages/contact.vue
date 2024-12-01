@@ -14,7 +14,7 @@ useHead({ title: "Contact" });
       <AppIconLink
         to="https://www.linkedin.com/in/natalie-fischesser/"
         title="LinkedIn"
-        icon="i-fa-brands-linkedin-in"
+        icon="i-mdi-linkedin"
         color="yellow"
       />
 
