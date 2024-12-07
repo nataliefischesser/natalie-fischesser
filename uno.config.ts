@@ -1,6 +1,6 @@
+import { FileSystemIconLoader } from "@iconify/utils/lib/loader/node-loaders";
 import { resolve } from "pathe";
 import { defineConfig, presetIcons, presetTypography, presetUno } from "unocss";
-import { FileSystemIconLoader } from "@iconify/utils/lib/loader/node-loaders";
 
 export const colors = {
   pink: "oklch(76% 0.27 336)", // rgba(255, 118, 225, 1)

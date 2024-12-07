@@ -26,7 +26,7 @@ const variants = {
 </script>
 
 <template>
-  <Motion :variants="variants">
+  <Motion :variants>
     <slot />
   </Motion>
 </template>
