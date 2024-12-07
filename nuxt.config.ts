@@ -1,6 +1,6 @@
 import {
-  slideYFadeTransition,
   scaleFadeTransition,
+  slideYFadeTransition,
 } from "./app/utils/transitions";
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
@@ -32,6 +32,7 @@ export default defineNuxtConfig({
   },
   eslint: {
     config: {
+      standalone: false,
       nuxt: {
         sortConfigKeys: true,
       },
