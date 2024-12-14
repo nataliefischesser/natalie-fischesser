@@ -3,7 +3,7 @@ import type { NuxtError } from "nuxt/app";
 
 const props = defineProps<{ error: NuxtError }>();
 
-const title = computed(() => `Error ${props.error.statusCode.toString()}`);
+const title = computed(() => `Error ${props.error.statusCode}`);
 
 const errorMessage = toRef(() => props.error.message);
 const fallbackMessage = "An unknown error occurred";
