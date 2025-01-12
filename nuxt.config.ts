@@ -25,6 +25,13 @@ export default defineNuxtConfig({
     typedPages: true,
   },
   compatibilityDate: "2025-01-01",
+  vite: {
+    vue: {
+      features: {
+        optionsAPI: false,
+      },
+    },
+  },
   postcss: {
     plugins: {
       "@csstools/postcss-oklab-function": { preserve: true },
