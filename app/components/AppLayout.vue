@@ -1,12 +1,4 @@
 <script setup lang="ts">
-const meta = {
-  title: "Natalie Fischesser - Visual UX Designer",
-  description:
-    "I am passionate about creating amazing user experiences through thoughtfully built web applications.",
-  url: "https://nataliefischesser.com",
-  icon: "/favicon.svg",
-} as const;
-
 useHead({
   link: [
     { rel: "icon", href: "/favicon.ico", sizes: "48x48" },
@@ -19,18 +11,23 @@ useHead({
   },
 });
 
+const route = useRoute();
+
+const url = toRef(() => `${SITE_META.url}${route.path}`);
+
 useSeoMeta({
   titleTemplate: (title) =>
-    title ? `${title} - Natalie Fischesser` : meta.title,
+    title ? `${title} - ${SITE_META.title}` : SITE_META.title,
   themeColor: "#ff76e1",
-  description: meta.description,
-  ogTitle: meta.title,
-  ogDescription: meta.description,
-  ogImage: meta.icon,
-  ogUrl: meta.url,
-  twitterTitle: meta.title,
-  twitterDescription: meta.description,
-  twitterImage: meta.icon,
+  description: SITE_META.description,
+  ogTitle: SITE_META.title,
+  ogDescription: SITE_META.description,
+  ogImage: SITE_META.icon,
+  ogSiteName: SITE_META.name,
+  ogUrl: url,
+  twitterTitle: SITE_META.title,
+  twitterDescription: SITE_META.description,
+  twitterImage: SITE_META.icon,
   twitterCard: "summary",
 });
 </script>
