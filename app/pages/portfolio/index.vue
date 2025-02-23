@@ -5,7 +5,7 @@ definePageMeta({
   color: "green",
 });
 
-useHead({ title: "Portfolio" });
+useSeoMeta({ title: "Portfolio" });
 
 const password = ref("");
 const unlocked = useSessionStorage("portfolio-unlocked", false);

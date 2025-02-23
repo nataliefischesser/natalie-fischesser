@@ -5,7 +5,7 @@ definePageMeta({
   color: "yellow",
 });
 
-useHead({ title: "Contact" });
+useSeoMeta({ title: "Contact" });
 </script>
 
 <template>

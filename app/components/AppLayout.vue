@@ -8,8 +8,6 @@ const meta = {
 } as const;
 
 useHead({
-  titleTemplate: (title) =>
-    title ? `${title} - Natalie Fischesser` : meta.title,
   link: [
     { rel: "icon", href: "/favicon.ico", sizes: "48x48" },
     { rel: "icon", href: "/favicon.svg", sizes: "any", type: "image/svg+xml" },
@@ -22,6 +20,8 @@ useHead({
 });
 
 useSeoMeta({
+  titleTemplate: (title) =>
+    title ? `${title} - Natalie Fischesser` : meta.title,
   themeColor: "#ff76e1",
   description: meta.description,
   ogTitle: meta.title,
