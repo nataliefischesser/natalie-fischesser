@@ -4,5 +4,5 @@ export const SITE_META = Object.freeze({
   description:
     "I am passionate about creating amazing user experiences through thoughtfully built web applications.",
   url: "https://nataliefischesser.com",
-  icon: "/favicon.svg",
+  image: "https://nataliefischesser.com/favicon.png",
 });
