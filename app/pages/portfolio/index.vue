@@ -53,12 +53,16 @@ const menu = useRouteMenu([
           class="w-full flex flex-wrap items-center justify-center gap-8"
           @submit.prevent="unlock"
         >
-          <input
-            v-model="password"
-            type="password"
-            placeholder="Enter Password"
-            class="h-28 max-w-full grow outlined rounded-full bg-transparent p-inline-6 placeholder:text-heading text-2xl text-green placeholder:text-2xl placeholder:text-green placeholder:font-700"
-          />
+          <label for="password">
+            <span class="sr-only">Password</span>
+            <input
+              id="password"
+              v-model="password"
+              type="password"
+              placeholder="Enter Password"
+              class="h-28 max-w-full grow outlined rounded-full bg-transparent p-inline-6 placeholder:text-heading text-2xl text-green placeholder:text-2xl placeholder:text-green placeholder:font-700"
+            />
+          </label>
 
           <button
             type="submit"
