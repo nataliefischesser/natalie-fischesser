@@ -24,7 +24,7 @@ export default defineNuxtConfig({
     asyncContext: true,
     typedPages: true,
   },
-  compatibilityDate: "2025-01-01",
+  compatibilityDate: "latest",
   vite: {
     vue: {
       features: {
