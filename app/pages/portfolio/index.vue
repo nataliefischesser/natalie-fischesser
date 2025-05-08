@@ -34,13 +34,13 @@ const menu = useRouteMenu([
         <nav
           v-if="unlocked"
           aria-label="Portfolio"
-          class="flex flex-wrap items-center justify-center gap-6"
+          class="flex flex-wrap gap-6 items-center justify-center"
         >
           <NuxtLink
             v-for="item in menu"
             :key="item.path"
             :to="item.path"
-            class="aspect-square w-40 flex items-center justify-center rounded-2xl text-heading text-black interactive"
+            class="text-heading text-black rounded-2xl flex w-40 aspect-square items-center justify-center interactive"
             :class="{ [`bg-${item.meta.color}`]: item.meta.color }"
           >
             {{ item.meta.title }}
@@ -50,7 +50,7 @@ const menu = useRouteMenu([
         <form
           v-else
           novalidate
-          class="w-full flex flex-wrap items-center justify-center gap-8"
+          class="flex flex-wrap gap-8 w-full items-center justify-center"
           @submit.prevent="unlock"
         >
           <label for="password">
@@ -60,14 +60,14 @@ const menu = useRouteMenu([
               v-model="password"
               type="password"
               placeholder="Enter Password"
-              class="h-28 max-w-full grow outlined rounded-full bg-transparent p-inline-6 placeholder:text-heading text-2xl text-green placeholder:text-2xl placeholder:text-green placeholder:font-700"
+              class="placeholder:text-heading text-2xl text-green p-inline-6 outlined rounded-full bg-transparent grow h-28 max-w-full placeholder:text-2xl placeholder:text-green placeholder:font-700"
             />
           </label>
 
           <button
             type="submit"
             aria-label="Submit"
-            class="dot dot-outlined b-green text-green interactive hover:bg-green hover:text-black"
+            class="dot text-green dot-outlined b-green hover:text-black hover:bg-green interactive"
           >
             <i class="i-mdi-arrow-right scale-200" />
           </button>

@@ -7,7 +7,7 @@ defineProps<{
 
 <template>
   <div
-    class="aspect-square w-1em flex items-center justify-center rounded-xl text-20 text-black sm:text-24"
+    class="text-20 text-black rounded-xl flex w-1em aspect-square items-center justify-center sm:text-24"
   >
     <i :class="icon" />
     <span class="sr-only">{{ title }}</span>

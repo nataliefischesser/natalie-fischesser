@@ -4,10 +4,11 @@ import {
   defineConfig,
   presetIcons,
   presetTypography,
-  presetWind3,
+  presetWind4,
 } from "unocss";
+import type { Theme } from "unocss/preset-wind4";
 
-export const colors = {
+const colors = {
   pink: "oklch(76% 0.27 336)", // rgba(255, 118, 225, 1)
   red: "oklch(70% 0.25 27)", // rgba(255, 93, 83, 1)
   green: "oklch(76% 0.22 163)", // rgba(4, 210, 149, 1)
@@ -22,7 +23,7 @@ export type ColorValue = Colors[ColorKey];
 // https://unocss.dev/config/
 export default defineConfig({
   presets: [
-    presetWind3(),
+    presetWind4(),
     presetIcons({
       collections: {
         app: FileSystemIconLoader(resolve(__dirname, "./app/assets/icons")),
@@ -67,10 +68,10 @@ export default defineConfig({
   ],
   theme: {
     colors,
-    fontFamily: {
+    font: {
       sans: "Inter, sans-serif",
     },
-  },
+  } satisfies Theme,
   shortcuts: [
     {
       "min-h-viewport": "min-h-full min-h-screen min-h-100dvh",
@@ -79,7 +80,7 @@ export default defineConfig({
       "text-heading": "text-2xl font-900 lh-1em uppercase",
       outlined: "b-12 b-current",
       interactive: "transition active:scale-100 hover:scale-110",
-      dot: "inline-block aspect-square w-28 flex items-center justify-center rounded-full bg-current text-3em",
+      dot: "aspect-square w-28 flex items-center justify-center rounded-full bg-current text-3em",
       "dot-outlined": "outlined bg-transparent",
     },
   ],

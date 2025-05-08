@@ -19,7 +19,7 @@ const nuxtLinkProps = computed(() => {
 <template>
   <NuxtLink
     v-bind="nuxtLinkProps"
-    class="flex items-center justify-center gap-6 outlined rounded-full p-6 text-heading interactive hover:text-black"
+    class="text-heading p-6 outlined rounded-full flex gap-6 items-center justify-center hover:text-black interactive"
     :class="{ [`b-${color} text-${color} hover:bg-${color}`]: color }"
   >
     <slot />

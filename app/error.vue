@@ -14,16 +14,16 @@ useSeoMeta({ title });
 
 <template>
   <AppLayout class="grid place-items-center">
-    <div class="max-w-lg w-full flex flex-col gap-8 text-xl">
+    <div class="text-xl flex flex-col gap-8 max-w-lg w-full">
       <h1 class="text-7xl text-heading text-pink">{{ title }}</h1>
 
-      <p class="text-balance leading-relaxed">
+      <p class="leading-relaxed text-balance">
         {{ message }}
       </p>
 
       <NuxtLink
         :to="{ name: 'index' }"
-        class="flex items-center gap-3 text-pink"
+        class="text-pink flex gap-3 items-center"
       >
         <i class="i-mdi-arrow-left scale-150" />
         <span>Go Back</span>

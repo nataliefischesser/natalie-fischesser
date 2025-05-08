@@ -1,14 +1,14 @@
 <template>
   <AppLayout class="flex flex-col xl:flex-row">
     <div
-      class="flex basis-50% flex-col gap-8 text-black transition-colors duration-300 p-content"
+      class="text-black flex basis-50% flex-col gap-8 transition-colors duration-300 p-content"
       :class="{ [`bg-${$route.meta.color}`]: $route.meta.color }"
     >
       <header>
-        <h1 class="flex text-heading text-xl tracking-widest sm:text-2xl">
+        <h1 class="text-heading text-xl tracking-widest flex sm:text-2xl">
           <NuxtLink
             :to="{ name: 'index' }"
-            class="flex items-center gap-2 transition active:scale-98"
+            class="flex gap-2 transition items-center active:scale-98"
           >
             <i class="i-app-logo text-11" />
             <span class="p-3">Natalie Fischesser</span>
@@ -16,7 +16,7 @@
         </h1>
       </header>
 
-      <main class="flex grow items-center @container/main">
+      <main class="@container/main flex grow items-center">
         <Transition v-bind="slideYFadeTransition">
           <h2
             v-if="$route.meta.title"

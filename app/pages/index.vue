@@ -16,7 +16,7 @@ definePageMeta({
           viewBox="0 0 113 113"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          class="h-full w-full scale-120 text-yellow"
+          class="text-yellow h-full w-full scale-120"
         >
           <path
             d="M56.4 82.25C67.351 82.25 76.61 75.388 80.417 65.8H32.383C36.143 75.388 45.449 82.25 56.4 82.25ZM39.95 51.7C41.8198 51.7 43.613 50.9573 44.9351 49.6351C46.2573 48.313 47 46.5198 47 44.65C47 42.7802 46.2573 40.9871 44.9351 39.6649C43.613 38.3428 41.8198 37.6 39.95 37.6C38.0802 37.6 36.2871 38.3428 34.9649 39.6649C33.6428 40.9871 32.9 42.7802 32.9 44.65C32.9 46.5198 33.6428 48.313 34.9649 49.6351C36.2871 50.9573 38.0802 51.7 39.95 51.7ZM72.85 51.7C74.7198 51.7 76.513 50.9573 77.8351 49.6351C79.1572 48.313 79.9 46.5198 79.9 44.65C79.9 42.7802 79.1572 40.9871 77.8351 39.6649C76.513 38.3428 74.7198 37.6 72.85 37.6C70.9802 37.6 69.187 38.3428 67.8649 39.6649C66.5428 40.9871 65.8 42.7802 65.8 44.65C65.8 46.5198 66.5428 48.313 67.8649 49.6351C69.187 50.9573 70.9802 51.7 72.85 51.7ZM56.4 94C46.4279 94 36.8642 90.0386 29.8128 82.9872C22.7614 75.9359 18.8 66.3722 18.8 56.4C18.8 46.4279 22.7614 36.8642 29.8128 29.8128C36.8642 22.7614 46.4279 18.8 56.4 18.8C66.3722 18.8 75.9359 22.7614 82.9872 29.8128C90.0386 36.8642 94 46.4279 94 56.4C94 66.3722 90.0386 75.9359 82.9872 82.9872C75.9359 90.0386 66.3722 94 56.4 94ZM56.4 9.40002C30.409 9.40002 9.40002 30.55 9.40002 56.4C9.40002 68.8652 14.3518 80.8198 23.166 89.634C27.5304 93.9984 32.7116 97.4604 38.4139 99.8224C44.1162 102.184 50.2279 103.4 56.4 103.4C68.8652 103.4 80.8198 98.4482 89.634 89.634C98.4482 80.8198 103.4 68.8652 103.4 56.4C103.4 50.2279 102.184 44.1162 99.8224 38.4139C97.4604 32.7116 93.9984 27.5304 89.634 23.166C85.2697 18.8017 80.0884 15.3397 74.3861 12.9777C68.6838 10.6157 62.5722 9.40002 56.4 9.40002Z"
@@ -27,7 +27,7 @@ definePageMeta({
 
       <BoardPiece class="h-20em w-20em">
         <div
-          class="h-full w-full flex items-center justify-center rounded-full bg-blue"
+          class="rounded-full bg-blue flex h-full w-full items-center justify-center"
         />
       </BoardPiece>
 
@@ -35,7 +35,7 @@ definePageMeta({
         <AppPillLink
           :to="{ name: 'about' }"
           color="red"
-          class="h-full w-full b-2em text-1em active:scale-100 hover:scale-105"
+          class="text-1em b-2em h-full w-full active:scale-100 hover:scale-105"
         >
           <span class="text-8em text-heading">About Me</span>
         </AppPillLink>
@@ -43,7 +43,7 @@ definePageMeta({
 
       <BoardPiece class="col-span-4 h-20em">
         <input
-          class="h-full w-full b-0.25em outlined rounded-full bg-transparent p-inline-0.5em text-8em text-heading text-pink uppercase focus:outline-dashed"
+          class="text-8em text-heading text-pink p-inline-0.5em b-0.25em outlined rounded-full bg-transparent h-full w-full uppercase focus:outline-dashed"
         />
       </BoardPiece>
 
@@ -54,7 +54,7 @@ definePageMeta({
           viewBox="0 0 113 113"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          class="h-full w-full scale-120 text-yellow"
+          class="text-yellow h-full w-full scale-120"
         >
           <path
             d="M28.3999 51.7V61.1H65.9999L49.5499 77.55L56.2239 84.224L84.0479 56.4L56.2239 28.576L49.5499 35.25L65.9999 51.7H28.3999ZM103.6 56.4C103.6 50.2279 102.384 44.1162 100.022 38.4139C97.6602 32.7116 94.1982 27.5304 89.8339 23.166C81.0197 14.3518 69.065 9.40002 56.5999 9.40002C44.1347 9.40002 32.18 14.3518 23.3658 23.166C14.5516 31.9802 9.59985 43.9348 9.59985 56.4C9.59985 62.5722 10.8155 68.6838 13.1775 74.3861C15.5395 80.0884 19.0015 85.2697 23.3658 89.634C27.7302 93.9984 32.9114 97.4604 38.6137 99.8224C44.316 102.184 50.4277 103.4 56.5999 103.4C69.065 103.4 81.0197 98.4482 89.8339 89.634C98.6481 80.8198 103.6 68.8652 103.6 56.4ZM94.1999 56.4C94.1999 66.3722 90.2384 75.9359 83.1871 82.9872C76.1357 90.0386 66.572 94 56.5999 94C46.6277 94 37.064 90.0386 30.0126 82.9872C22.9613 75.9359 18.9999 66.3722 18.9999 56.4C18.9999 46.4279 22.9613 36.8642 30.0126 29.8128C37.064 22.7614 46.6277 18.8 56.5999 18.8C66.572 18.8 76.1357 22.7614 83.1871 29.8128C90.2384 36.8642 94.1999 46.4279 94.1999 56.4Z"
@@ -65,7 +65,7 @@ definePageMeta({
 
       <BoardPiece class="col-span-2 h-20em">
         <div
-          class="h-full w-full flex items-center justify-center rounded-full bg-yellow"
+          class="rounded-full bg-yellow flex h-full w-full items-center justify-center"
         />
       </BoardPiece>
 
@@ -76,7 +76,7 @@ definePageMeta({
           viewBox="0 0 113 113"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          class="h-full w-full scale-120 text-blue"
+          class="text-blue h-full w-full scale-120"
         >
           <path
             d="M51.7 84.6H61.1V47L77.55 63.45L84.224 56.776L56.4 28.952L28.576 56.776L35.25 63.45L51.7 47V84.6ZM56.4 9.40002C50.2279 9.40002 44.1162 10.6157 38.4139 12.9777C32.7116 15.3397 27.5304 18.8017 23.166 23.166C14.3518 31.9802 9.40002 43.9349 9.40002 56.4C9.40002 68.8652 14.3518 80.8198 23.166 89.634C31.9802 98.4483 43.9348 103.4 56.4 103.4C62.5722 103.4 68.6838 102.184 74.3861 99.8224C80.0884 97.4604 85.2697 93.9984 89.634 89.634C93.9984 85.2697 97.4604 80.0885 99.8224 74.3861C102.184 68.6838 103.4 62.5722 103.4 56.4C103.4 43.9349 98.4482 31.9802 89.634 23.166C80.8198 14.3518 68.8652 9.40002 56.4 9.40002ZM56.4 18.8C66.3722 18.8 75.9359 22.7614 82.9872 29.8128C90.0386 36.8642 94 46.4279 94 56.4C94 66.3722 90.0386 75.9359 82.9872 82.9872C75.9359 90.0386 66.3722 94 56.4 94C46.4279 94 36.8642 90.0386 29.8128 82.9872C22.7614 75.9359 18.8 66.3722 18.8 56.4C18.8 46.4279 22.7614 36.8642 29.8128 29.8128C36.8642 22.7614 46.4279 18.8 56.4 18.8Z"
@@ -87,17 +87,17 @@ definePageMeta({
 
       <BoardPiece class="col-span-2 h-20em">
         <div
-          class="group relative h-full w-full flex items-center justify-start rounded-full bg-red"
+          class="group rounded-full bg-red flex h-full w-full items-center justify-start relative"
         >
           <div
-            class="absolute left-0 aspect-square h-full rounded-full bg-#d9d9d9 transition-all group-hover:left-full group-hover:translate-x--100%"
+            class="rounded-full bg-#d9d9d9 h-full aspect-square transition-all left-0 absolute group-hover:translate-x--100% group-hover:left-full"
           />
         </div>
       </BoardPiece>
 
       <BoardPiece class="h-20em w-20em">
         <div
-          class="h-full w-full flex items-center justify-center rounded-full bg-blue"
+          class="rounded-full bg-blue flex h-full w-full items-center justify-center"
         />
       </BoardPiece>
 
@@ -105,7 +105,7 @@ definePageMeta({
         <AppPillLink
           :to="{ name: 'portfolio' }"
           color="green"
-          class="h-full w-full b-2em text-1em active:scale-100 hover:scale-105"
+          class="text-1em b-2em h-full w-full active:scale-100 hover:scale-105"
         >
           <span class="text-8em text-heading">Portfolio</span>
         </AppPillLink>
@@ -113,13 +113,13 @@ definePageMeta({
 
       <BoardPiece class="h-20em w-20em">
         <div
-          class="h-full w-full flex items-center justify-center rounded-full bg-yellow"
+          class="rounded-full bg-yellow flex h-full w-full items-center justify-center"
         />
       </BoardPiece>
 
       <BoardPiece class="col-span-full h-20em">
         <div
-          class="h-full w-full flex items-center justify-center rounded-full bg-pink"
+          class="rounded-full bg-pink flex h-full w-full items-center justify-center"
         />
       </BoardPiece>
 
@@ -130,7 +130,7 @@ definePageMeta({
           viewBox="0 0 113 113"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          class="h-full w-full scale-120 text-red"
+          class="text-red h-full w-full scale-120"
         >
           <path
             d="M51.7 28.2H61.1V65.8L77.55 49.35L84.224 56.024L56.4 83.848L28.576 56.024L35.25 49.35L51.7 65.8V28.2ZM56.4 103.4C50.2279 103.4 44.1162 102.184 38.4139 99.8224C32.7116 97.4604 27.5304 93.9984 23.166 89.634C14.3518 80.8198 9.40002 68.8652 9.40002 56.4C9.40002 43.9348 14.3518 31.9802 23.166 23.166C31.9802 14.3518 43.9348 9.40002 56.4 9.40002C62.5722 9.40002 68.6838 10.6157 74.3861 12.9777C80.0884 15.3397 85.2697 18.8017 89.634 23.166C93.9984 27.5304 97.4604 32.7116 99.8224 38.4139C102.184 44.1162 103.4 50.2279 103.4 56.4C103.4 68.8652 98.4482 80.8198 89.634 89.634C80.8198 98.4482 68.8652 103.4 56.4 103.4ZM56.4 94C66.3722 94 75.9359 90.0386 82.9872 82.9872C90.0386 75.9359 94 66.3722 94 56.4C94 46.4279 90.0386 36.8642 82.9872 29.8128C75.9359 22.7614 66.3722 18.8 56.4 18.8C46.4279 18.8 36.8642 22.7614 29.8128 29.8128C22.7614 36.8642 18.8 46.4279 18.8 56.4C18.8 66.3722 22.7614 75.9359 29.8128 82.9872C36.8642 90.0386 46.4279 94 56.4 94Z"
@@ -141,7 +141,7 @@ definePageMeta({
 
       <BoardPiece class="col-span-2 h-20em">
         <div
-          class="h-full w-full flex items-center justify-center rounded-full bg-blue"
+          class="rounded-full bg-blue flex h-full w-full items-center justify-center"
         />
       </BoardPiece>
 
@@ -152,7 +152,7 @@ definePageMeta({
           viewBox="0 0 113 113"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          class="h-full w-full scale-120 text-pink"
+          class="text-pink h-full w-full scale-120"
         >
           <path
             d="M42.3 103.4C41.0535 103.4 39.858 102.905 38.9766 102.023C38.0952 101.142 37.6 99.9465 37.6 98.7V84.6H18.8C16.307 84.6 13.9161 83.6097 12.1532 81.8468C10.3904 80.084 9.40002 77.6931 9.40002 75.2V18.8C9.40002 13.583 13.63 9.40002 18.8 9.40002H94C96.4931 9.40002 98.884 10.3904 100.647 12.1532C102.41 13.9161 103.4 16.307 103.4 18.8V75.2C103.4 77.6931 102.41 80.084 100.647 81.8468C98.884 83.6097 96.4931 84.6 94 84.6H65.33L47.94 102.037C47 102.93 45.825 103.4 44.65 103.4H42.3ZM47 75.2V89.676L61.476 75.2H94V18.8H18.8V75.2H47ZM79.9 51.7H70.5V42.3H79.9V51.7ZM61.1 51.7H51.7V42.3H61.1V51.7ZM42.3 51.7H32.9V42.3H42.3V51.7Z"
@@ -163,7 +163,7 @@ definePageMeta({
 
       <BoardPiece class="h-20em w-20em">
         <div
-          class="h-full w-full flex items-center justify-center rounded-full bg-green"
+          class="rounded-full bg-green flex h-full w-full items-center justify-center"
         />
       </BoardPiece>
 
@@ -171,7 +171,7 @@ definePageMeta({
         <AppPillLink
           :to="{ name: 'contact' }"
           color="yellow"
-          class="h-full w-full b-2em text-1em active:scale-100 hover:scale-105"
+          class="text-1em b-2em h-full w-full active:scale-100 hover:scale-105"
         >
           <span class="text-8em text-heading">Get In Touch</span>
         </AppPillLink>
@@ -184,7 +184,7 @@ definePageMeta({
           viewBox="0 0 113 113"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          class="h-full w-full scale-120 text-red"
+          class="text-red h-full w-full scale-120"
         >
           <path
             d="M56.3999 9.40002C50.2278 9.40002 44.1161 10.6157 38.4138 12.9777C32.7115 15.3397 27.5302 18.8017 23.1659 23.166C14.3517 31.9802 9.3999 43.9349 9.3999 56.4C9.3999 68.8652 14.3517 80.8198 23.1659 89.634C27.5302 93.9984 32.7115 97.4604 38.4138 99.8224C44.1161 102.184 50.2278 103.4 56.3999 103.4C68.8651 103.4 80.8197 98.4483 89.6339 89.634C98.4481 80.8198 103.4 68.8652 103.4 56.4C103.4 50.2279 102.184 44.1162 99.8223 38.4139C97.4603 32.7116 93.9983 27.5304 89.6339 23.166C85.2696 18.8017 80.0883 15.3397 74.386 12.9777C68.6837 10.6157 62.572 9.40002 56.3999 9.40002ZM56.3999 18.8C66.372 18.8 75.9358 22.7614 82.9871 29.8128C90.0385 36.8642 93.9999 46.4279 93.9999 56.4C93.9999 66.3722 90.0385 75.9359 82.9871 82.9872C75.9358 90.0386 66.372 94 56.3999 94C46.4278 94 36.8641 90.0386 29.8127 82.9872C22.7613 75.9359 18.7999 66.3722 18.7999 56.4C18.7999 46.4279 22.7613 36.8642 29.8127 29.8128C36.8641 22.7614 46.4278 18.8 56.3999 18.8ZM45.8249 36.754C38.5869 36.754 32.8999 42.441 32.8999 49.679C32.8999 58.562 40.8899 65.8 53.0159 76.798L56.3999 79.9L59.7839 76.798C71.9099 65.8 79.8999 58.562 79.8999 49.679C79.8999 42.441 74.2129 36.754 66.9749 36.754C62.8859 36.754 58.9849 38.681 56.3999 41.689C53.8149 38.681 49.9139 36.754 45.8249 36.754Z"

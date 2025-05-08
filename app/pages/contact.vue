@@ -10,7 +10,7 @@ useSeoMeta({ title: "Contact" });
 
 <template>
   <AppMain class="flex items-center justify-center">
-    <div class="flex flex-wrap items-center justify-center gap-6 sm:gap-8">
+    <div class="flex flex-wrap gap-6 items-center justify-center sm:gap-8">
       <AppIconLink
         to="https://www.linkedin.com/in/natalie-fischesser/"
         title="LinkedIn"

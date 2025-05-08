@@ -6,7 +6,7 @@ defineOptions({ inheritAttrs: false });
   <BoardPiece>
     <div
       v-bind="$attrs"
-      class="h-20em w-20em flex items-center justify-center rounded-full"
+      class="rounded-full flex h-20em w-20em items-center justify-center"
     />
   </BoardPiece>
 </template>

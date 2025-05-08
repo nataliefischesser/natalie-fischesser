@@ -10,9 +10,9 @@ useSeoMeta({ title: "About" });
 
 <template>
   <AppMain class="flex flex-col gap-10">
-    <div class="grid gap-10 sm:grid-cols-[1fr_8rem]">
+    <div class="gap-10 grid sm:grid-cols-[1fr_8rem]">
       <div
-        class="flex items-center rounded-2xl bg-pink p-8 p-block-12 text-2xl text-black font-800"
+        class="text-2xl text-black font-800 p-8 p-block-12 rounded-2xl bg-pink flex items-center"
       >
         <span>
           I'm a Visual Designer with 15+ years of experience that is all about
@@ -20,17 +20,17 @@ useSeoMeta({ title: "About" });
         </span>
       </div>
 
-      <div class="flex flex-row justify-center gap-6 sm:flex-col">
+      <div class="flex flex-row gap-6 justify-center sm:flex-col">
         <div class="dot text-blue" />
 
-        <div class="dot bg-transparent text-pink">
+        <div class="dot text-pink bg-transparent">
           <i class="i-mdi-emoticon-excited-outline scale-275" />
         </div>
       </div>
     </div>
 
-    <div class="flex items-center gap-8">
-      <div class="dot dot-outlined text-red">
+    <div class="flex gap-8 items-center">
+      <div class="dot text-red dot-outlined">
         <i class="i-mdi-arrow-down scale-200" />
       </div>
 
@@ -38,7 +38,7 @@ useSeoMeta({ title: "About" });
     </div>
 
     <ul
-      class="list-disc columns-1 pis-8 text-xl text-gray-200 font-900 sm:columns-2 children:p-1"
+      class="text-xl text-gray-200 font-900 pis-8 list-disc columns-1 children:p-1 sm:columns-2"
     >
       <li>User Research</li>
       <li>Design Systems</li>
@@ -54,8 +54,8 @@ useSeoMeta({ title: "About" });
       <li>Communication</li>
     </ul>
 
-    <div class="flex items-center gap-8">
-      <div class="dot dot-outlined text-yellow">
+    <div class="flex gap-8 items-center">
+      <div class="dot text-yellow dot-outlined">
         <i class="i-mdi-star scale-150" />
       </div>
 
