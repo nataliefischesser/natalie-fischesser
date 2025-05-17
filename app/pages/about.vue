@@ -38,7 +38,7 @@ useSeoMeta({ title: "About" });
     </div>
 
     <ul
-      class="text-xl text-gray-200 font-900 pis-8 list-disc columns-1 children:p-1 sm:columns-2"
+      class="text-xl text-gray-200 font-black pis-8 list-disc columns-1 children:p-1 sm:columns-2"
     >
       <li>User Research</li>
       <li>Design Systems</li>

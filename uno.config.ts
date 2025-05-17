@@ -77,7 +77,7 @@ export default defineConfig({
       "min-h-viewport": "min-h-full min-h-screen min-h-100dvh",
       "p-content": "p-8 sm:p-10",
       "max-w-content": "max-w-4xl",
-      "text-heading": "text-2xl font-900 lh-1em uppercase",
+      "text-heading": "text-2xl font-black lh-1em uppercase",
       outlined: "b-12 b-current",
       interactive: "transition active:scale-100 hover:scale-110",
       dot: "aspect-square w-28 flex items-center justify-center rounded-full bg-current text-3em",
