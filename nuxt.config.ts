@@ -54,5 +54,7 @@ export default defineNuxtConfig({
       subsets: ["latin"],
     },
   },
+  unocss: {
+    disableNuxtInlineStyle: false,
   },
 });
