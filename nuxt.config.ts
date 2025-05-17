@@ -43,6 +43,11 @@ export default defineNuxtConfig({
       nuxt: {
         sortConfigKeys: true,
       },
+      typescript: {
+        tsconfigPath: "./tsconfig.json",
+      },
+    },
+  },
   fonts: {
     defaults: {
       weights: [400, 600, 700, 900],
