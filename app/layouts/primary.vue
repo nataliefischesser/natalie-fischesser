@@ -1,7 +1,7 @@
 <template>
   <AppLayout class="flex flex-col xl:flex-row">
     <div
-      class="text-black flex basis-50% flex-col gap-8 transition-colors duration-300 p-content"
+      class="text-black p-content flex basis-50% flex-col gap-8 transition-colors duration-300"
       :class="{ [`bg-${$route.meta.color}`]: $route.meta.color }"
     >
       <header>

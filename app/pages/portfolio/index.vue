@@ -40,7 +40,7 @@ const menu = useRouteMenu([
             v-for="item in menu"
             :key="item.path"
             :to="item.path"
-            class="text-heading text-black rounded-2xl flex w-40 aspect-square items-center justify-center interactive"
+            class="text-heading text-black rounded-2xl flex w-40 aspect-square interactive items-center justify-center"
             :class="{ [`bg-${item.meta.color}`]: item.meta.color }"
           >
             {{ item.meta.title }}
@@ -60,14 +60,14 @@ const menu = useRouteMenu([
               v-model="password"
               type="password"
               placeholder="Enter Password"
-              class="placeholder:text-heading text-2xl text-green p-inline-6 outlined rounded-full bg-transparent grow h-28 max-w-full placeholder:text-2xl placeholder:text-green placeholder:font-700"
+              class="text-2xl text-green p-inline-6 outlined rounded-full bg-transparent grow h-28 max-w-full placeholder:text-2xl placeholder:text-heading placeholder:text-green placeholder:font-700"
             />
           </label>
 
           <button
             type="submit"
             aria-label="Submit"
-            class="dot text-green dot-outlined b-green hover:text-black hover:bg-green interactive"
+            class="dot text-green dot-outlined b-green interactive hover:text-black hover:bg-green"
           >
             <i class="i-mdi-arrow-right scale-200" />
           </button>
