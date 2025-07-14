@@ -17,9 +17,9 @@ const unlock = () => {
 };
 
 const menu = useRouteMenu([
-  "/portfolio/spenio",
-  "/portfolio/wellness",
-  "/portfolio/idealab",
+  "portfolio-spenio",
+  "portfolio-wellness",
+  "portfolio-idealab",
 ]);
 </script>
 
