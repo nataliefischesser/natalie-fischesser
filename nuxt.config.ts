@@ -17,9 +17,6 @@ export default defineNuxtConfig({
     pageTransition: scaleFadeTransition,
   },
   css: ["~/assets/css/main.css"],
-  future: {
-    compatibilityVersion: 4,
-  },
   experimental: {
     asyncContext: true,
     typedPages: true,
