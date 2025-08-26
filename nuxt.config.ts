@@ -20,7 +20,6 @@ export default defineNuxtConfig({
   experimental: {
     asyncContext: true,
     typedPages: true,
-    viewTransition: true,
   },
   compatibilityDate: "latest",
   vite: {
