@@ -34,35 +34,25 @@ export default defineConfig({
       },
     }),
     presetTypography({
-      cssExtend: {
-        "* > *:only-child": {
-          "margin-block-start": 0,
-          "margin-block-end": 0,
-        },
-        "* > *:first-child": {
-          "margin-block-start": 0,
-        },
-        "* > *:last-child": {
-          "margin-block-end": 0,
-        },
-        "h1, h2, h3, h4, h5, h6": {
-          "font-weight": 900,
-          "text-transform": "uppercase",
-        },
-        "h1 a, h2 a, h3 a, h4 a, h5 a, h6 a": {
-          "font-weight": "inherit",
-          "text-decoration": "none",
-        },
-        h1: {
-          "font-size": "7rem",
-          color: "#ffffff",
-        },
-        h2: {
-          "font-size": "1.5rem",
-        },
-        "p, ul, ol, li, div": {
-          color: "#ffffff",
-        },
+      colorScheme: {
+        body: ["inherit", "inherit"],
+        headings: ["inherit", "inherit"],
+        lead: ["inherit", "inherit"],
+        links: ["inherit", "inherit"],
+        bold: ["inherit", "inherit"],
+        counters: ["inherit", "inherit"],
+        bullets: ["inherit", "inherit"],
+        hr: ["inherit", "inherit"],
+        quotes: ["inherit", "inherit"],
+        "quote-borders": ["inherit", "inherit"],
+        captions: ["inherit", "inherit"],
+        kbd: ["inherit", "inherit"],
+        "kbd-shadows": ["inherit", "inherit"],
+        code: ["inherit", "inherit"],
+        "pre-code": ["inherit", "inherit"],
+        "pre-bg": ["inherit", "inherit"],
+        "th-borders": ["inherit", "inherit"],
+        "td-borders": ["inherit", "inherit"],
       },
     }),
   ],
@@ -74,23 +64,25 @@ export default defineConfig({
   } satisfies Theme,
   shortcuts: [
     {
+      "app-prose":
+        "prose prose-headings:font-black prose-headings:uppercase prose-h1:text-7xl! [&_h1>a,&_h2>a,&_h3>a,&_h4>a,&_h5>a,&_h6>a]:text-unset text-pretty",
       "min-h-viewport": "min-h-full min-h-screen min-h-100dvh",
       "p-content": "p-8 sm:p-10",
       "max-w-content": "max-w-4xl",
       "text-heading": "text-2xl font-black lh-1em uppercase",
-      outlined: "b-12 b-current",
+      outlined: "border-12 border-current",
       interactive: "transition active:scale-100 hover:scale-110",
       dot: "aspect-square w-28 flex items-center justify-center rounded-full bg-current text-3em",
       "dot-outlined": "outlined bg-transparent",
     },
   ],
   safelist: Object.keys(colors).flatMap((color) => [
-    `prose-${color}`,
-    `b-${color}`,
+    `prose-h1:text-${color}`,
     `bg-${color}`,
+    `border-${color}`,
     `text-${color}`,
-    `hover:b-${color}`,
     `hover:bg-${color}`,
+    `hover:border-${color}`,
     `hover:text-${color}`,
   ]),
 });

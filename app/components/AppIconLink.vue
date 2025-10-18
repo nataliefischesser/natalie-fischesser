@@ -22,7 +22,7 @@ const nuxtLinkProps = computed(() => {
   <NuxtLink
     v-bind="nuxtLinkProps"
     class="dot dot-outlined interactive hover:text-black"
-    :class="{ [`b-${color} text-${color} hover:bg-${color}`]: color }"
+    :class="{ [`border-${color} text-${color} hover:bg-${color}`]: color }"
   >
     <i :class="icon" />
     <span class="sr-only">{{ title }}</span>

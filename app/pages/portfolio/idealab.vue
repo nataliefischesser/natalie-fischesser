@@ -16,8 +16,8 @@ definePageMeta({
     />
 
     <div
-      class="max-w-full prose"
-      :class="{ [`prose-${$route.meta.color}`]: $route.meta.color }"
+      class="app-prose max-w-full"
+      :class="{ [`prose-h1:text-${$route.meta.color}`]: $route.meta.color }"
     >
       <h1>{{ $route.meta.title }}</h1>
 

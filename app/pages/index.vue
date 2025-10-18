@@ -35,7 +35,7 @@ definePageMeta({
         <AppPillLink
           :to="{ name: 'about' }"
           color="red"
-          class="text-1em b-2em h-full w-full active:scale-100 hover:scale-105"
+          class="text-1em border-2em h-full w-full active:scale-100 hover:scale-105"
         >
           <span class="text-8em text-heading">About Me</span>
         </AppPillLink>
@@ -43,7 +43,7 @@ definePageMeta({
 
       <BoardPiece class="col-span-4 h-20em">
         <input
-          class="text-8em text-heading text-pink p-inline-0.5em b-0.25em outlined rounded-full bg-transparent h-full w-full uppercase focus:outline-dashed"
+          class="text-8em text-heading text-pink p-inline-0.5em border-0.25em outlined rounded-full bg-transparent h-full w-full uppercase focus:outline-dashed"
         />
       </BoardPiece>
 
@@ -105,7 +105,7 @@ definePageMeta({
         <AppPillLink
           :to="{ name: 'portfolio' }"
           color="green"
-          class="text-1em b-2em h-full w-full active:scale-100 hover:scale-105"
+          class="text-1em border-2em h-full w-full active:scale-100 hover:scale-105"
         >
           <span class="text-8em text-heading">Portfolio</span>
         </AppPillLink>
@@ -171,7 +171,7 @@ definePageMeta({
         <AppPillLink
           :to="{ name: 'contact' }"
           color="yellow"
-          class="text-1em b-2em h-full w-full active:scale-100 hover:scale-105"
+          class="text-1em border-2em h-full w-full active:scale-100 hover:scale-105"
         >
           <span class="text-8em text-heading">Get In Touch</span>
         </AppPillLink>

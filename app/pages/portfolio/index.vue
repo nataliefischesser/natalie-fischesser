@@ -67,7 +67,7 @@ const menu = useRouteMenu([
           <button
             type="submit"
             aria-label="Submit"
-            class="dot text-green dot-outlined b-green interactive hover:text-black hover:bg-green"
+            class="dot text-green dot-outlined border-green interactive hover:text-black hover:bg-green"
           >
             <i class="i-mdi-arrow-right scale-200" />
           </button>
