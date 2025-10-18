@@ -25,9 +25,6 @@ useSeoMeta({
   ogImage: SITE_META.image,
   ogSiteName: SITE_META.name,
   ogUrl: url,
-  twitterTitle: SITE_META.title,
-  twitterDescription: SITE_META.description,
-  twitterImage: SITE_META.image,
   twitterCard: "summary",
 });
 </script>
