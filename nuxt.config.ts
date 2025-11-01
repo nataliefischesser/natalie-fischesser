@@ -19,7 +19,10 @@ export default defineNuxtConfig({
   css: ["~/assets/css/main.css"],
   experimental: {
     asyncContext: true,
+    extractAsyncDataHandlers: true,
     typedPages: true,
+    typescriptPlugin: true,
+    viteEnvironmentApi: true,
   },
   compatibilityDate: "latest",
   vite: {
