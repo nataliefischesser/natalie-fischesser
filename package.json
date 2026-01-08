@@ -1,8 +1,8 @@
 {
   "name": "natalie-fischesser",
+  "type": "module",
   "private": true,
   "packageManager": "pnpm@10.27.0",
-  "type": "module",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
