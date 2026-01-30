@@ -4,6 +4,9 @@ export const useRouteMenu = <T extends Readonly<(keyof RouteNamedMap)[]>>(
   names: MaybeRefOrGetter<T>,
 ) => {
   const router = useRouter();
+  const route = useRoute();
 
-  return computed(() => toValue(names).map((name) => router.resolve({ name })));
+  return computed(() => {
+    return toValue(names).map((name) => router.resolve({ name }, route));
+  });
 };
