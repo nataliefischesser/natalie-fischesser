@@ -4,6 +4,12 @@ definePageMeta({
   title: "Hey! What’s Good?",
   color: "pink",
 });
+
+const site = useSiteConfig();
+
+const title = toRef(() => `${site.name} ${site.separator} ${site.jobTitle}`);
+
+useSeoMeta({ title, ogTitle: title, titleTemplate: "%s" });
 </script>
 
 <template>

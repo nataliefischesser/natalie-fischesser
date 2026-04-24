@@ -5,7 +5,7 @@ definePageMeta({
   color: "red",
 });
 
-useSeoMeta({ title: "About" });
+useSeoMeta({ title: "About", ogTitle: "About" });
 </script>
 
 <template>

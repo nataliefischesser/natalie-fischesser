@@ -6,6 +6,7 @@ import {
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   modules: [
+    "@nuxtjs/seo",
     "@nuxt/eslint",
     "@nuxt/fonts",
     "@nuxt/icon",
@@ -14,10 +15,23 @@ export default defineNuxtConfig({
     "@vueuse/motion/nuxt",
   ],
   app: {
+    head: {
+      titleTemplate: "%s %separator %siteName",
+    },
     layoutTransition: slideYFadeTransition,
     pageTransition: scaleFadeTransition,
   },
   css: ["~/assets/css/main.css"],
+  site: {
+    name: "Natalie Fischesser",
+    url: "https://nataliefischesser.com",
+    separator: "-",
+    defaultLocale: "en-US",
+    jobTitle: "Visual UX Designer",
+  },
+  future: {
+    compatibilityVersion: 5,
+  },
   experimental: {
     asyncContext: true,
     extractAsyncDataHandlers: true,
@@ -58,6 +72,28 @@ export default defineNuxtConfig({
   icon: {
     class: "icon",
     customCollections: [{ prefix: "app", dir: "./app/assets/icons" }],
+  },
+  ogImage: {
+    zeroRuntime: true,
+  },
+  robots: {
+    groups: [
+      {
+        userAgent: "*",
+        allow: "/",
+        contentUsage: {
+          bots: "y",
+          "train-ai": "n",
+        },
+        contentSignal: {
+          "ai-train": "no",
+          search: "yes",
+        },
+      },
+    ],
+  },
+  sitemap: {
+    zeroRuntime: true,
   },
   unocss: {
     disableNuxtInlineStyle: false,

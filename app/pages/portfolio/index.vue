@@ -5,8 +5,6 @@ definePageMeta({
   color: "green",
 });
 
-useSeoMeta({ title: "Portfolio" });
-
 const password = ref("");
 const unlocked = useSessionStorage("portfolio-unlocked", false);
 
@@ -21,6 +19,8 @@ const routes = useRoutes([
   "portfolio-wellness",
   "portfolio-idealab",
 ]);
+
+useSeoMeta({ title: "Portfolio", ogTitle: "Portfolio" });
 </script>
 
 <template>
