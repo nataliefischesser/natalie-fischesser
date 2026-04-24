@@ -67,31 +67,36 @@ useSeoMeta({ title: "About", ogTitle: "About" });
     <div class="flex flex-wrap gap-8">
       <AboutTopTool
         title="Figma"
-        icon="simple-icons:figma scale-75"
+        icon="simple-icons:figma"
+        icon-class="scale-75"
         class="bg-green"
       />
 
       <AboutTopTool
         title="Sketch"
-        icon="simple-icons:sketch scale-65"
+        icon="simple-icons:sketch"
+        icon-class="scale-65"
         class="bg-yellow"
       />
 
       <AboutTopTool
         title="Adobe Suite"
-        icon="simple-icons:adobecreativecloud scale-75"
+        icon="simple-icons:adobecreativecloud"
+        icon-class="scale-75"
         class="bg-pink"
       />
 
       <AboutTopTool
         title="Miro"
-        icon="simple-icons:miro scale-65"
+        icon="simple-icons:miro"
+        icon-class="scale-65"
         class="bg-yellow"
       />
 
       <AboutTopTool
         title="Jira"
-        icon="simple-icons:jirasoftware scale-75"
+        icon="simple-icons:jirasoftware"
+        icon-class="scale-75"
         class="bg-blue"
       />
     </div>
