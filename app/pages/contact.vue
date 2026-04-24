@@ -14,21 +14,21 @@ useSeoMeta({ title: "Contact" });
       <AppIconLink
         to="https://www.linkedin.com/in/natalie-fischesser/"
         title="LinkedIn"
-        icon="i-mdi-linkedin"
+        icon="mdi:linkedin"
         color="yellow"
       />
 
       <AppIconLink
         to="mailto:nfischesser@gmail.com"
         title="Email"
-        icon="i-mdi-email"
+        icon="mdi:email"
         color="yellow"
       />
 
       <AppIconLink
         to="sms:5555555555"
         title="Text"
-        icon="i-mdi-message"
+        icon="mdi:message"
         color="yellow"
       />
     </div>

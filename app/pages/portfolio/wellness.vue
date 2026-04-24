@@ -10,7 +10,7 @@ definePageMeta({
     <AppIconLink
       :to="{ name: 'portfolio' }"
       title="Back"
-      icon="i-mdi-arrow-left scale-200"
+      icon="mdi:arrow-left scale-200"
       :color="$route.meta.color"
       class="mbe-8"
     />

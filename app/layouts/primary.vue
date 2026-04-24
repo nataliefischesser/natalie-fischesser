@@ -10,7 +10,7 @@
             :to="{ name: 'index' }"
             class="flex gap-2 transition items-center active:scale-98"
           >
-            <i class="i-app-logo text-11" />
+            <Icon name="app:logo" class="text-11" />
             <span class="p-3">Natalie Fischesser</span>
           </NuxtLink>
         </h1>

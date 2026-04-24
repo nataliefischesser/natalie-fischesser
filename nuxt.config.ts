@@ -8,6 +8,7 @@ export default defineNuxtConfig({
   modules: [
     "@nuxt/eslint",
     "@nuxt/fonts",
+    "@nuxt/icon",
     "@unocss/nuxt",
     "@vueuse/nuxt",
     "@vueuse/motion/nuxt",
@@ -50,9 +51,13 @@ export default defineNuxtConfig({
   },
   fonts: {
     defaults: {
-      weights: [400, 600, 700, 900],
+      weights: ["400 700"],
       subsets: ["latin"],
     },
+  },
+  icon: {
+    class: "icon",
+    customCollections: [{ prefix: "app", dir: "./app/assets/icons" }],
   },
   unocss: {
     disableNuxtInlineStyle: false,

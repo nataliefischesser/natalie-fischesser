@@ -24,7 +24,7 @@ const nuxtLinkProps = computed(() => {
     class="dot dot-outlined interactive hover:text-black"
     :class="{ [`border-${color} text-${color} hover:bg-${color}`]: color }"
   >
-    <i :class="icon" />
+    <Icon :name="icon" />
     <span class="sr-only">{{ title }}</span>
   </NuxtLink>
 </template>

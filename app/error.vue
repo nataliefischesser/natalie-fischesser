@@ -25,7 +25,7 @@ useSeoMeta({ title });
         :to="{ name: 'index' }"
         class="text-pink flex gap-3 items-center"
       >
-        <i class="i-mdi-arrow-left scale-150" />
+        <Icon name="mdi:arrow-left" class="scale-150" />
         <span>Go Back</span>
       </NuxtLink>
     </div>

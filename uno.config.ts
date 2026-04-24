@@ -1,11 +1,4 @@
-import { FileSystemIconLoader } from "@iconify/utils/lib/loader/node-loaders";
-import { resolve } from "pathe";
-import {
-  defineConfig,
-  presetIcons,
-  presetTypography,
-  presetWind4,
-} from "unocss";
+import { defineConfig, presetTypography, presetWind4 } from "unocss";
 import type { Theme } from "unocss/preset-wind4";
 
 const colors = {
@@ -21,18 +14,9 @@ export type ColorKey = keyof Colors;
 export type ColorValue = Colors[ColorKey];
 
 // https://unocss.dev/config/
-export default defineConfig({
+export default defineConfig<Theme>({
   presets: [
     presetWind4(),
-    presetIcons({
-      collections: {
-        app: FileSystemIconLoader(resolve(__dirname, "./app/assets/icons")),
-      },
-      extraProperties: {
-        display: "inline-block",
-        "vertical-align": "middle",
-      },
-    }),
     presetTypography({
       colorScheme: {
         body: ["inherit", "inherit"],
@@ -61,7 +45,7 @@ export default defineConfig({
     font: {
       sans: "Inter, sans-serif",
     },
-  } satisfies Theme,
+  },
   shortcuts: [
     {
       "app-prose":

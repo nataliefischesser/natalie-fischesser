@@ -9,7 +9,7 @@ defineProps<{
   <div
     class="text-20 text-black rounded-xl flex w-1em aspect-square items-center justify-center sm:text-24"
   >
-    <i :class="icon" />
+    <Icon :name="icon" />
     <span class="sr-only">{{ title }}</span>
   </div>
 </template>

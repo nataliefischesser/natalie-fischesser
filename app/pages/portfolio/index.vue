@@ -27,7 +27,7 @@ const routes = useRoutes([
   <AppMain class="flex items-center justify-center">
     <ClientOnly>
       <template #fallback>
-        <i class="i-svg-spinners-3-dots-move text-24 text-green" />
+        <Icon name="svg-spinners:3-dots-move" class="text-24 text-green" />
       </template>
 
       <Transition v-bind="scaleFadeTransition">
@@ -69,7 +69,7 @@ const routes = useRoutes([
             aria-label="Submit"
             class="dot text-green dot-outlined border-green interactive hover:text-black hover:bg-green"
           >
-            <i class="i-mdi-arrow-right scale-200" />
+            <Icon name="mdi:arrow-right" class="scale-200" />
           </button>
         </form>
       </Transition>
