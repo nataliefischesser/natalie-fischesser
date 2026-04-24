@@ -19,16 +19,10 @@ useSeoMeta({ title: "Contact", ogTitle: "Contact" });
       />
 
       <AppIconLink
-        to="mailto:nfischesser@gmail.com"
+        to="/email"
+        external
         title="Email"
         icon="mdi:email"
-        color="yellow"
-      />
-
-      <AppIconLink
-        to="sms:5555555555"
-        title="Text"
-        icon="mdi:message"
         color="yellow"
       />
     </div>

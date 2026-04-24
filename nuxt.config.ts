@@ -29,6 +29,11 @@ export default defineNuxtConfig({
     defaultLocale: "en-US",
     jobTitle: "Visual UX Designer",
   },
+  routeRules: {
+    "/email": {
+      redirect: "mailto:nfischesser@gmail.com",
+    },
+  },
   future: {
     compatibilityVersion: 5,
   },
