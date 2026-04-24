@@ -20,6 +20,7 @@ useSeoMeta({ title: "Contact", ogTitle: "Contact" });
 
       <AppIconLink
         to="/email"
+        target="_blank"
         external
         title="Email"
         icon="mdi:email"

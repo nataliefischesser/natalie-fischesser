@@ -5,6 +5,7 @@ import type { ColorKey } from "~~/uno.config";
 const props = withDefaults(
   defineProps<{
     to: NuxtLinkProps["to"];
+    target?: NuxtLinkProps["target"];
     external?: NuxtLinkProps["external"];
     title: string;
     icon: string;
