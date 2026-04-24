@@ -70,7 +70,7 @@ export default defineNuxtConfig({
   fonts: {
     defaults: {
       subsets: ["latin"],
-      weights: ["400 700"],
+      weights: ["400 900"],
     },
     families: [
       {
