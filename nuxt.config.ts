@@ -104,6 +104,7 @@ export default defineNuxtConfig({
   },
   sitemap: {
     zeroRuntime: true,
+    exclude: [/^\/portfolio\/.*$/],
   },
   unocss: {
     disableNuxtInlineStyle: false,
