@@ -7,8 +7,6 @@ useHead({
 });
 
 useSeoMeta({ themeColor: "#ff76e1" });
-
-defineOgImage("Default");
 </script>
 
 <template>
