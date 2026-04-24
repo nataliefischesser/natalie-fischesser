@@ -16,7 +16,7 @@ const unlock = () => {
   unlocked.value = true;
 };
 
-const menu = useRouteMenu([
+const routes = useRoutes([
   "portfolio-spenio",
   "portfolio-wellness",
   "portfolio-idealab",
@@ -37,8 +37,8 @@ const menu = useRouteMenu([
           class="flex flex-wrap gap-6 items-center justify-center"
         >
           <NuxtLink
-            v-for="item in menu"
-            :key="item.path"
+            v-for="item in routes"
+            :key="item.name"
             :to="item.path"
             class="text-heading text-black rounded-2xl flex w-40 aspect-square interactive items-center justify-center"
             :class="{ [`bg-${item.meta.color}`]: item.meta.color }"
