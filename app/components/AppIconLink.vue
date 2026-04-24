@@ -8,6 +8,7 @@ const props = withDefaults(
     external?: NuxtLinkProps["external"];
     title: string;
     icon: string;
+    iconClass?: string;
     color?: ColorKey;
   }>(),
   { color: "pink" },
@@ -25,7 +26,7 @@ const nuxtLinkProps = computed(() => {
     class="dot dot-outlined interactive hover:text-black"
     :class="{ [`border-${color} text-${color} hover:bg-${color}`]: color }"
   >
-    <Icon :name="icon" />
+    <Icon :name="icon" :class="iconClass" />
     <span class="sr-only">{{ title }}</span>
   </NuxtLink>
 </template>
