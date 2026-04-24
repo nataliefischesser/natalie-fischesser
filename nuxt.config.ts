@@ -69,9 +69,15 @@ export default defineNuxtConfig({
   },
   fonts: {
     defaults: {
-      weights: ["400 900"],
       subsets: ["latin"],
+      weights: ["400 700"],
     },
+    families: [
+      {
+        name: "Inter",
+        global: true,
+      },
+    ],
   },
   icon: {
     class: "icon",
