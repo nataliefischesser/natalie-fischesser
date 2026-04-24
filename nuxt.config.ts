@@ -42,7 +42,6 @@ export default defineNuxtConfig({
     extractAsyncDataHandlers: true,
     typedPages: true,
     typescriptPlugin: true,
-    viteEnvironmentApi: true,
   },
   compatibilityDate: "latest",
   vite: {
