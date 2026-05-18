@@ -44,10 +44,47 @@ export default defineNuxtConfig({
     typescriptPlugin: true,
   },
   compatibilityDate: "latest",
+  nitro: {
+    compressPublicAssets: true,
+    prerender: {
+      routes: ["/"],
+      crawlLinks: true,
+    },
+    typescript: {
+      tsConfig: {
+        compilerOptions: {
+          erasableSyntaxOnly: true,
+        },
+      },
+    },
+  },
   vite: {
     vue: {
       features: {
         optionsAPI: false,
+      },
+    },
+  },
+  typescript: {
+    tsConfig: {
+      compilerOptions: {
+        erasableSyntaxOnly: true,
+      },
+      vueCompilerOptions: {
+        strictTemplates: true,
+        fallthroughAttributes: true,
+        checkRequiredFallthroughAttributes: true,
+      },
+    },
+    sharedTsConfig: {
+      compilerOptions: {
+        erasableSyntaxOnly: true,
+      },
+    },
+    nodeTsConfig: {
+      include: ["../*.config.*"],
+      compilerOptions: {
+        erasableSyntaxOnly: true,
       },
     },
   },
