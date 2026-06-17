@@ -12,5 +12,8 @@ useSeoMeta({ themeColor: "#ff76e1" });
 <template>
   <div class="min-h-viewport">
     <slot />
+
+    <AppLoadingIndicator />
+    <NuxtRouteAnnouncer />
   </div>
 </template>

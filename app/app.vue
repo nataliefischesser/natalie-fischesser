@@ -12,7 +12,4 @@ useSeoMeta({ title, description, ogTitle: title });
   <NuxtLayout>
     <NuxtPage />
   </NuxtLayout>
-
-  <AppLoadingIndicator />
-  <NuxtRouteAnnouncer />
 </template>
