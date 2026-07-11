@@ -121,7 +121,7 @@ export default defineNuxtConfig({
     customCollections: [{ prefix: "app", dir: "./app/assets/icons" }],
   },
   ogImage: {
-    zeroRuntime: true,
+    enabled: false,
   },
   robots: {
     groups: [
