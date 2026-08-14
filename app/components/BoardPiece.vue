@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import type { MotionVariants, Transition } from "@vueuse/motion";
 
+defineSlots<{ default: () => unknown }>();
+
 const randomDelay = Math.random() * 150;
 
 const transition = {

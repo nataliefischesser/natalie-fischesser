@@ -1,4 +1,6 @@
 <script setup lang="ts">
+defineSlots<{ default: () => unknown }>();
+
 useHead({
   bodyAttrs: {
     class:

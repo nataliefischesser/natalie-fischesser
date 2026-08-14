@@ -2,6 +2,8 @@
 import type { ColorKey } from "~~/uno.config";
 
 const { color = "pink" } = defineProps<{ color?: ColorKey }>();
+
+defineSlots<{ default: () => unknown }>();
 </script>
 
 <template>
